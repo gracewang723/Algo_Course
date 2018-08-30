@@ -38,7 +38,14 @@ Lot’s of literature would be used and studied
 
 How to use techniques to solve the problems in these fields?
 
+Course Teaching Team
+=========================
 
+Dr. Yong Tang
+
+TA:
+WJ Wang
+SS Hu
  
 **************************
 C01 Introduction
