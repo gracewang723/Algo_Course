@@ -44,8 +44,7 @@ Course Teaching Team
 Dr. Yong Tang
 
 TA:
-WJ Wang
-SS Hu
+WJ Wang;SS Hu
  
 **************************
 C01 Introduction
