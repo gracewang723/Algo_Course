@@ -3,6 +3,7 @@ Course Introduction
 ************************** 
   
 Course Mission 
+=========================
 
 To build a bridge to connect: Computing Methods + Science/Engineering
 
@@ -17,6 +18,7 @@ Economics: How to allocate scared/limited resources to optimize the output for t
 Engineering: Manufacturing, food production, online business operation, Financial engineering...
 
 Course Target
+=========================
 
 Expose to computing techniques:
 
@@ -46,9 +48,14 @@ C01 Introduction
 READING
 =========================
 
-CODE:
+MATERIAL
+=========================
 
-MATERIAL:
+CODE
+=========================
+
+HOMEWORK
+=========================
 
 
 **************************
@@ -56,162 +63,233 @@ C02 Python
 **************************
 
 
-READING:
+READING
+=========================
 
-CODE:
+MATERIAL
+=========================
 
-MATERIAL:
+CODE
+=========================
 
-
-
-
-**************************
-C03 Python
-**************************
-
-
-READING:
-
-CODE:
-
-MATERIAL:
+HOMEWORK
+=========================
 
 
 
 
 **************************
-C04 Python
+C03 Network Science
 **************************
 
 
-READING:
+READING
+=========================
 
-CODE:
+MATERIAL
+=========================
 
-MATERIAL:
+CODE
+=========================
 
-
-
-
-**************************
-C05 Python
-**************************
-
-
-READING:
-
-CODE:
-
-MATERIAL:
+HOMEWORK
+=========================
 
 
 
 
 **************************
-C06 Python
+C04 Social Network Analysis
 **************************
 
 
-READING:
+READING
+=========================
 
-CODE:
+MATERIAL
+=========================
 
-MATERIAL:
+CODE
+=========================
 
-
-
-
-**************************
-C07 Python
-**************************
-
-
-READING:
-
-CODE:
-
-MATERIAL:
+HOMEWORK
+=========================
 
 
 
 
 **************************
-C08 Python
+C05 Financial Network Analysis
 **************************
 
 
-READING:
+READING
+=========================
 
-CODE:
+MATERIAL
+=========================
 
-MATERIAL:
+CODE
+=========================
 
-
-
-
-**************************
-C09 Python
-**************************
-
-
-READING:
-
-CODE:
-
-MATERIAL:
+HOMEWORK
+=========================
 
 
 
 
 **************************
-C10 Python
+C06 AI Introduction
 **************************
 
 
-READING:
+READING
+=========================
 
-CODE:
+MATERIAL
+=========================
 
-MATERIAL:
+CODE
+=========================
 
-
-
-
-**************************
-C11 Python
-**************************
-
-
-READING:
-
-CODE:
-
-MATERIAL:
+HOMEWORK
+=========================
 
 
 
 
 **************************
-C12 Python
+C07 Deep Learning Theory and Technology Foundation
 **************************
 
 
-READING:
+READING
+=========================
 
-CODE:
+MATERIAL
+=========================
 
-MATERIAL:
+CODE
+=========================
+
+HOMEWORK
+=========================
 
 
 
 
 **************************
-C13 Python
+C08 Deep Learning for Image Analysis
 **************************
 
 
-READING:
+READING
+=========================
 
-CODE:
+MATERIAL
+=========================
 
-MATERIAL:
+CODE
+=========================
+
+HOMEWORK
+=========================
+
+
+
+
+**************************
+C09 Deep Learning for Time Serials Analysis
+**************************
+
+
+READING
+=========================
+
+MATERIAL
+=========================
+
+CODE
+=========================
+
+HOMEWORK
+=========================
+
+
+
+**************************
+C10 Deep Learning for Natural Science Research
+**************************
+
+
+READING
+=========================
+
+MATERIAL
+=========================
+
+CODE
+=========================
+
+HOMEWORK
+=========================
+
+
+
+
+**************************
+C11 Deep Learning for Bioinformatics
+**************************
+
+
+READING
+=========================
+
+MATERIAL
+=========================
+
+CODE
+=========================
+
+HOMEWORK
+=========================
+
+
+
+
+**************************
+C12 Monte Carlo in Scientific Research
+**************************
+
+
+READING
+=========================
+
+MATERIAL
+=========================
+
+CODE
+=========================
+
+HOMEWORK
+=========================
+
+
+
+
+**************************
+C13 Computing for Management Science
+**************************
+
+
+READING
+=========================
+
+MATERIAL
+=========================
+
+CODE
+=========================
+
+HOMEWORK
+=========================
