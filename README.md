@@ -1,6 +1,6 @@
 
 **************************
-Read the Docs Sphinx Theme
+#  Algorithm Course
 **************************
 
 .. image:: https://img.shields.io/pypi/v/sphinx_rtd_theme.svg
