@@ -48,17 +48,20 @@ READING
 =========================
 
 
-`here <https://htmlpreview.github.io/?https://github.com/gracewang723/Algo_Course/blob/master/test.html>`__.
+`Click HERE <https://htmlpreview.github.io/?https://github.com/gracewang723/Algo_Course/blob/master/test.html>`__
 
 MATERIAL
 =========================
 
 CODE
 =========================
+`code1 <https://github.com/gracewang723/Algo_Course/blob/master/C01%20Introduction.py>`__
 
 HOMEWORK
 =========================
+HW1:
 
+HW2:
 
 
 
