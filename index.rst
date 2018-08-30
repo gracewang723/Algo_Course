@@ -44,20 +44,14 @@ How to use techniques to solve the problems in these fields?
 C01 Introduction
 **************************
 
-
 READING
 =========================
-
 
 MATERIAL
 =========================
 
-
-
 CODE
 =========================
-
-
 
 HOMEWORK
 =========================
