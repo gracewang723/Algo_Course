@@ -61,7 +61,7 @@ MATERIAL
 
 CODE
 =========================
-`Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C01%20Introduction.py>`__
+`Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C01%20Introduction.py>`__ : Hello World!
 
 HOMEWORK
 =========================
@@ -87,13 +87,13 @@ MATERIAL
 
 CODE
 =========================
-`Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_Fibonacci.py>`__
+`Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_Fibonacci.py>`__ : Fibonacci Sequence
 
-`Code2 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_numpy.py>`__
+`Code2 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_numpy.py>`__ : Numpy
 
-`Code3 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_pandas.py>`__
+`Code3 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_pandas.py>`__ : Pandas
 
-`Code4 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_scipy.py>`__
+`Code4 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_scipy.py>`__ : Scipy
 
 HOMEWORK
 =========================
