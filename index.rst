@@ -48,18 +48,21 @@ C01 Introduction
 READING
 =========================
 
-`here <https://github.com/gracewang723/Algo_Course/blob/master/test.html>`__.
-
-
 
 MATERIAL
 =========================
 
+
+
 CODE
 =========================
 
+
+
 HOMEWORK
 =========================
+
+
 
 
 **************************
