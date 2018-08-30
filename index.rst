@@ -73,15 +73,24 @@ C02 Python
 READING
 =========================
 
+
+`Click HERE <https://htmlpreview.github.io/?https://github.com/gracewang723/Algo_Course/blob/master/test.html>`__
+
 MATERIAL
 =========================
 
 CODE
 =========================
+`Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_Fibonacci.py>`__
+`Code2 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_numpy.py>`__
+`Code3 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_pandas.py>`__
+`Code4 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_scipy.py>`__
 
 HOMEWORK
 =========================
+HW1:
 
+HW2:
 
 
 
