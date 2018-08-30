@@ -4,9 +4,16 @@ Course Introduction
 
 Course Mission
 
+
 To build a bridge to connect
+
+
 Computing Methods + Science/Engineering
+
+
 Science:
+
+
 Natural science: mathematics, physics, chemistry, cosmology...
 Management science: planning, scheduling, optimization, supply chain, organization...
 Social science: social network, social structure, policy making...
