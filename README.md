@@ -1,7 +1,7 @@
 # Algo_Course
 
 
-#CO1 INTRODUCTION
+CO1 INTRODUCTION
 
 #    READINGS:
     
