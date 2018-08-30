@@ -2,7 +2,7 @@
 Course Introduction  
 ************************** 
   
-Course Mission 
+Course Mission  
 =========================
 
 To build a bridge to connect: Computing Methods + Science/Engineering
