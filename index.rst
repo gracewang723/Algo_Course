@@ -61,7 +61,7 @@ MATERIAL
 
 CODE
 =========================
-`code1 <https://github.com/gracewang723/Algo_Course/blob/master/C01%20Introduction.py>`__
+`Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C01%20Introduction.py>`__
 
 HOMEWORK
 =========================
