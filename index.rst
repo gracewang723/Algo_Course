@@ -3,6 +3,7 @@ Course Introduction
 **************************
 
 Course Mission
+
 To build a bridge to connect
 Computing Methods + Science/Engineering
 Science:
@@ -15,6 +16,7 @@ Manufacturing, food production, online business operation...
 Financial engineering...
 
 Course Target
+
 Expose to computing techniques
 Machine learning, AI (deep learning), network modelling methods, etc.
 To know what we have in the toolbox.
