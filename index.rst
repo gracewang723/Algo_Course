@@ -47,7 +47,9 @@ C01 Introduction
 
 READING
 =========================
-.. _sphinx: https://github.com/gracewang723/Algo_Course/blob/master/test.html
+
+`here <https://github.com/gracewang723/Algo_Course/blob/master/test.html>`__.
+
 
 
 MATERIAL
