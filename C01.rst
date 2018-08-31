@@ -2,16 +2,16 @@
 C01 Introduction
 **************************
  
-- Material
+Material
 ========
 
-- Homework
+Homework
 ========
 
-- Code
+Code
 ====
 
-- Literature
+Literature
 ==========
 
   Jean N, Burke M, Xie M, Davis WM, Lobell DB and Ermon S (2016), **Combining satellite imagery and machine learning to predict poverty**, Science. Vol. 353(6301), pp. 790-794. American Association for the Advancement of Science.
