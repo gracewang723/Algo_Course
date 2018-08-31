@@ -40,10 +40,12 @@ How to use techniques to solve the problems in these fields?
 
 Course Team
 =========================
-Course Instructors:
+Course Instructors
+__________________
    Dr. Yong Tang
 
-Teaching Assistants:
+Teaching Assistants
+___________________
    Wei-Jia Wang
    Shi-Sheng Hu
  
