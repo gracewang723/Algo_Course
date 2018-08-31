@@ -13,3 +13,31 @@ Code
 
 Literature
 ==========
+
+Palia D, Ravid SA and Reisel N (2008), **Choosing to Cofinance: Analysis of Project-Specific Alliances in the Movie Industry**, The Review of Financial Studies. Vol. 21(2), pp. 483-511.
+
+Hanaki N, Peterhansl A, Dodds PS and Watts DJ (2007), **Cooperation in Evolving Social Networks**, Management Science. Vol. 53(7), pp. 1036-1050.
+
+Castro I, Casanueva C and Galán JL (2014), **Dynamic evolution of alliance portfolios**, European Management Journal. Vol. 32(3), pp. 423 - 433.
+
+Han X, Cao S, Shen Z, Zhang B, Wang W-X, Cressman R and Stanley HE (2017), **Emergence of communities and diversity in social networks**, Proceedings of the National Academy of Sciences. Vol. 114(11), pp. 2887-2891. National Academy of Sciences.
+
+Kossinets G and Watts DJ (2006), **Empirical Analysis of an Evolving Social Network**, Science. Vol. 311(5757), pp. 88-90. American Association for the Advancement of Science.
+
+Lieberman E, Hauert C and Nowak MA (2005), **Evolutionary dynamics on graphs**, Nature., January, 2005. Vol. 433, pp. 312. Macmillan Magazines Ltd..
+
+Borgatti SP, Mehra A, Brass DJ and Labianca G (2009), **Network Analysis in the Social Sciences**, Science. Vol. 323(5916), pp. 892-895. American Association for the Advancement of Science.
+
+Morrison EW (2002), **Newcomers' relationships: The role of social network ties during socialization**, Academy of management Journal. Vol. 45(6), pp. 1149-1160. Academy of Management Briarcliff Manor, NY 10510.
+
+Tichy NM, Tushman ML and Fombrun C (1979), **Social Network Analysis for Organizations**, The Academy of Management Review. Vol. 4(4), pp. 507-519. Academy of Management.
+
+Kim J and Hastak M (2018), **Social network analysis: Characteristics of online social networks after a disaster**, International Journal of Information Management. Vol. 38(1), pp. 86-96. Elsevier.
+
+Haldane AG and May RM (2011), **Systemic risk in banking ecosystems.**, Nature. Vol. 469(7330), pp. 351.
+
+Ferriani S, Cattani G and Baden-Fuller C (2009), **The relational antecedents of project-entrepreneurship: Network centrality, team composition and project performance**, Research Policy. Vol. 38(10), pp. 1545 - 1558.
+
+Perry-Smith JE and Shalley CE (2003), **The Social Side of Creativity: A Static and Dynamic Social Network Perspective**, The Academy of Management Review. Vol. 28(1), pp. 89-106. Academy of Management.
+
+Centola D (2010), **The Spread of Behavior in an Online Social Network Experiment**, Science. Vol. 329(5996), pp. 1194-1197. American Association for the Advancement of Science.
