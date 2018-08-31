@@ -14,32 +14,43 @@ Code
 Literature
 ==========
 
-  1.article (Jean2016)
+article (Jean2016)
 
-      Jean, N., Burke, M., Xie, M., Davis, W. M., Lobell, D. B. and Ermon, S.
+Jean, N., Burke, M., Xie, M., Davis, W. M., Lobell, D. B. and Ermon, S.
 
-      Combining satellite imagery and machine learning to predict poverty Science, American Association for the Advancement of Science, 2016, Vol. 353(6301), pp. 790-794
+Combining satellite imagery and machine learning to predict poverty
 
-  2.article (Ouyang2018)
+Science, American Association for the Advancement of Science, 2016, Vol. 353(6301), pp. 790-794
 
-      Ouyang, W., Aristov, A., Lelek, M., Hao, X. and Zimmer, C.
+article (Ouyang2018)
 
-      Deep learning massively accelerates super-resolution localization microscopy Nature Biotechnology, Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved., 2018, Vol. 36, pp. 460
+Ouyang, W., Aristov, A., Lelek, M., Hao, X. and Zimmer, C.
 
-  3.article (Zhou2018)
+Deep learning massively accelerates super-resolution localization microscopy
 
-      Zhou, Q., Tang, P., Liu, S., Pan, J., Yan, Q. and Zhang, S.-C. 
+Nature Biotechnology, Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved., 2018, Vol. 36, pp. 460
+article (Zhou2018)
 
-      Learning atoms for materials discovery Proceedings of the National Academy of Sciences, National Academy of Sciences, 2018
+Zhou, Q., Tang, P., Liu, S., Pan, J., Yan, Q. and Zhang, S.-C.
 
-  4.article (Einav2018)
+Learning atoms for materials discovery
 
-      Einav, L., Finkelstein, A., Mullainathan, S. and Obermeyer, Z.
+Proceedings of the National Academy of Sciences, National Academy of Sciences, 2018
 
-      Predictive modeling of U.S. health care spending in late life Science, American Association for the Advancement of Science, 2018, Vol. 360(6396), pp. 1462-1465
+article (Einav2018)
 
-  5.article (Heft-Neal2018)
+Einav, L., Finkelstein, A., Mullainathan, S. and Obermeyer, Z.
 
-      Heft-Neal, S., Burney, J., Bendavid, E. and Burke, M.
+Predictive modeling of U.S. health care spending in late life
 
-      Robust relationship between air quality and infant mortality in Africa Nature, 2018, Vol. 559(7713), pp. 254-258
+Science, American Association for the Advancement of Science, 2018, Vol. 360(6396), pp. 1462-1465
+
+article (Heft-Neal2018)
+
+Heft-Neal, S., Burney, J., Bendavid, E. and Burke, M.
+
+Robust relationship between air quality and infant mortality in Africa
+
+Nature, 2018, Vol. 559(7713), pp. 254-258
+
+Robust relationship between air quality and infant mortality in Africa Nature, 2018, Vol. 559(7713), pp. 254-258
