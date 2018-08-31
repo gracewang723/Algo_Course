@@ -13,3 +13,31 @@ Code
 
 Literature
 ==========
+
+Litjens G, Kooi T, Bejnordi BE, Setio AAA, Ciompi F, Ghafoorian M, van der Laak JA, van Ginneken B and Sánchez CI (2017), **A survey on deep learning in medical image analysis**, Medical Image Analysis. Vol. 42, pp. 60 - 88.
+
+Shen D, Wu G and Suk H-I (2017), **Deep Learning in Medical Image Analysis**, Annual Review of Biomedical Engineering. Vol. 19(1), pp. 221-248.
+
+He K, Zhang X, Ren S and Sun J (2016), **Deep Residual Learning for Image Recognition**, In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)., June, 2016.
+
+Karpathy A and Fei-Fei L (2015), **Deep Visual-Semantic Alignments for Generating Image Descriptions**, In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)., June, 2015.
+
+andMehran Pesteie andJorden Hetherington andPeter A. Behringer andTina Kapur andWilliam M. Wells andRobert Rohling andAndriy Fedorov andPurang Abolmaesumi AM (2017), **DeepInfer: open-source deep learning deployment toolkit for image-guided therapy**, Proc.SPIE. Vol. 10135, pp. 10135 - 10135 - 7.
+
+Esteva A, Kuprel B, Novoa RA, Ko J, Swetter SM, Blau HM and Thrun S (2017), **Dermatologist-level classification of skin cancer with deep neural networks**, Nature., January, 2017. Vol. 542, pp. 115. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
+
+Girshick R (2015), **Fast R-CNN**, In The IEEE International Conference on Computer Vision (ICCV)., December, 2015.
+
+Ren S, He K, Girshick R and Sun J (2015), **Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks**, In Advances in Neural Information Processing Systems 28. , pp. 91-99. Curran Associates, Inc..
+
+Goodfellow I, Pouget-Abadie J, Mirza M, Xu B, Warde-Farley D, Ozair S, Courville A and Bengio Y (2014), **Generative Adversarial Nets**, In Advances in Neural Information Processing Systems 27. , pp. 2672-2680. Curran Associates, Inc..
+
+Szegedy C, Liu W, Jia Y, Sermanet P, Reed S, Anguelov D, Erhan D, Vanhoucke V and Rabinovich A (2015), **Going Deeper With Convolutions**, In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)., June, 2015.
+
+Kermany DS, Goldbaum M, Cai W, Valentim CC, Liang H, Baxter SL, McKeown A, Yang G, Wu X, Yan F, Dong J, Prasadha MK, Pei J, Ting MY, Zhu J, Li C, Hewett S, Dong J, Ziyar I, Shi A, Zhang R, Zheng L, Hou R, Shi W, Fu X, Duan Y, Huu VA, Wen C, Zhang ED, Zhang CL, Li O, Wang X, Singer MA, Sun X, Xu J, Tafreshi A, Lewis MA, Xia H and Zhang K (2018), **Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning**, Cell. Vol. 172(5), pp. 1122 - 1131.e9.
+
+Girshick R, Donahue J, Darrell T and Malik J (2014), **Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation**, In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)., June, 2014.
+
+Simonyan K and Zisserman A (2014), **Very Deep Convolutional Networks for Large-Scale Image Recognition**, CoRR. Vol. abs/1409.1556
+
+Zeiler MD and Fergus R (2014), **Visualizing and Understanding Convolutional Networks**, In Computer Vision -- ECCV 2014. Cham , pp. 818-833. Springer International Publishing.
