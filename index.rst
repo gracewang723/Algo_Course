@@ -55,20 +55,20 @@ C01 Introduction
 **************************
 
   Reading
-_______________________________
+===============================
 
 
 `Click HERE <https://htmlpreview.github.io/?https://github.com/gracewang723/Algo_Course/blob/master/test.html>`__
 
   Material
-_______________________________
+===============================
 
   Code
-_______________________________
+===============================
 `  Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C01%20Introduction.py>`__ : Hello World!
 
 HOMEWORK
-_______________________________
+===============================
 HW1:
 
 HW2:
