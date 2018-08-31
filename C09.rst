@@ -1,3 +1,15 @@
 *******************************************
 C09 Deep Learning for Time Serials Analysis
 *******************************************
+
+Material
+========
+
+Homework
+========
+
+Code
+====
+
+Literature
+==========
