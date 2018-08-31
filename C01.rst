@@ -15,6 +15,9 @@ Literature
 ==========
 
 [1] J. Chang, V. Sitzmann, X. Dun, W. Heidrich, and G. Wetzstein. Hybrid optical-electronic convolutional neural networks with optimized diffractive optics for image classification. Scientific Reports, 8(1):12324, 2018.
+
 [2] N. C. Harris, G. R. Steinbrecher, M. Prabhu, Y. Lahini, J. Mower, D. Bunandar, C. Chen, F. N. C. Wong, T. Baehr-Jones, M. Hochberg, S. Lloyd, and D. Englund. Quantum transport simulations in a programmable nanophotonic processor. Nature Photonics, 11:447 EP –, 06 2017.
+
 [3] D. A. B. Miller. Meshing optics with applications. Nature Photonics, 11:403 EP –, 06 2017.
+
 [4] Y. Shen, N. C. Harris, S. Skirlo, M. Prabhu, T. Baehr-Jones, M. Hochberg, X. Sun, S. Zhao, H. Larochelle, D. Englund, and M. Soljaˇci ́c. Deep learning with coherent nanophotonic circuits. Nature Photonics, 11:441 EP –, 06 2017.
