@@ -1,3 +1,15 @@
 **********************************************
 C10 Deep Learning for Natural Science Research
 **********************************************
+
+Material
+========
+
+Homework
+========
+
+Code
+====
+
+Literature
+==========
