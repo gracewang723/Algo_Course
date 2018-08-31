@@ -1,5 +1,5 @@
 *******************************************
-C09 Deep Learning for Time Serials Analysis
+C09 Deep Learning for Time Series Analysis
 *******************************************
 
 Material
