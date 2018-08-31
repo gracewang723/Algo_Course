@@ -81,16 +81,16 @@ C02 Python
 
 
 READING
-=========================
+___________
 
 
 `Click HERE <https://htmlpreview.github.io/?https://github.com/gracewang723/Algo_Course/blob/master/test.html>`__
 
 MATERIAL
-=========================
+___________
 
 CODE
-=========================
+___________
 `Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_Fibonacci.py>`__ : Fibonacci Sequence
 
 `Code2 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_numpy.py>`__ : Numpy
@@ -100,7 +100,7 @@ CODE
 `Code4 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_scipy.py>`__ : Scipy
 
 HOMEWORK
-=========================
+________
 HW1:
 
 HW2:
@@ -113,16 +113,16 @@ C03 Network Science
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
 
 
 
@@ -133,16 +133,16 @@ C04 Social Network Analysis
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
 
 
 
@@ -153,16 +153,16 @@ C05 Financial Network Analysis
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
 
 
 
@@ -173,16 +173,16 @@ C06 AI Introduction
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
 
 
 
@@ -193,16 +193,16 @@ C07 Deep Learning Theory and Technology Foundation
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
 
 
 
@@ -213,16 +213,16 @@ C08 Deep Learning for Image Analysis
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
 
 
 
@@ -233,16 +233,16 @@ C09 Deep Learning for Time Serials Analysis
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
 
 
 
@@ -252,16 +252,16 @@ C10 Deep Learning for Natural Science Research
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
 
 
 
@@ -272,16 +272,16 @@ C11 Deep Learning for Bioinformatics
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
 
 
 
@@ -292,16 +292,16 @@ C12 Monte Carlo in Scientific Research
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
 
 
 
@@ -312,13 +312,13 @@ C13 Computing for Management Science
 
 
 READING
-=========================
+_________
 
 MATERIAL
-=========================
+_________
 
 CODE
-=========================
+_________
 
 HOMEWORK
-=========================
+_________
