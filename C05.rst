@@ -14,46 +14,46 @@ Code
 Literature
 ==========
 
-Huang W-Q, Zhuang X-T and Yao S (2009), **A network analysis of the Chinese stock market**, Physica A: Statistical Mechanics and its Applications. Vol. 388(14), pp. 2956 - 2964.
+  Huang W-Q, Zhuang X-T and Yao S (2009), **A network analysis of the Chinese stock market**, Physica A: Statistical Mechanics and its Applications. Vol. 388(14), pp. 2956 - 2964.
 
-Iori G, Masi GD, Precup OV, Gabbi G and Caldarelli G (2008), **A network analysis of the Italian overnight money market**, Journal of Economic Dynamics and Control. Vol. 32(1), pp. 259 - 278.
+  Iori G, Masi GD, Precup OV, Gabbi G and Caldarelli G (2008), **A network analysis of the Italian overnight money market**, Journal of Economic Dynamics and Control. Vol. 32(1), pp. 259 - 278.
 
-Gabaix X, Gopikrishnan P, Plerou V and Stanley HE (2003), **A theory of power-law distributions in financial market fluctuations**, Nature., 05, 2003. Vol. 423(6937), pp. 267-270.
+  Gabaix X, Gopikrishnan P, Plerou V and Stanley HE (2003), **A theory of power-law distributions in financial market fluctuations**, Nature., 05, 2003. Vol. 423(6937), pp. 267-270.
 
-Buldyrev SV, Parshani R, Paul G, Stanley HE and Havlin S (2010), **Catastrophic cascade of failures in interdependent networks**, Nature., 04, 2010. Vol. 464(7291), pp. 1025-1028. Macmillan Publishers Limited. All rights reserved.
+  Buldyrev SV, Parshani R, Paul G, Stanley HE and Havlin S (2010), **Catastrophic cascade of failures in interdependent networks**, Nature., 04, 2010. Vol. 464(7291), pp. 1025-1028. Macmillan Publishers Limited. All rights reserved.
 
-Gał˛ azka M (2011), **Characteristics of the Polish Stock Market correlations**, International Review of Financial Analysis. Vol. 20(1), pp. 1 - 5.
+  Gał˛ azka M (2011), **Characteristics of the Polish Stock Market correlations**, International Review of Financial Analysis. Vol. 20(1), pp. 1 - 5.
 
-Tu C (2014), **Cointegration-based financial networks study in Chinese stock market**, Physica A: Statistical Mechanics and its Applications. Vol. 402, pp. 245 - 254.
+  Tu C (2014), **Cointegration-based financial networks study in Chinese stock market**, Physica A: Statistical Mechanics and its Applications. Vol. 402, pp. 245 - 254.
 
-Battiston S, Farmer JD, Flache A, Garlaschelli D, Haldane AG, Heesterbeek H, Hommes C, Jaeger C, May R and Scheffer M (2016), **Complexity theory and financial regulation**, Science. Vol. 351(6275), pp. 818-819. American Association for the Advancement of Science.
+  Battiston S, Farmer JD, Flache A, Garlaschelli D, Haldane AG, Heesterbeek H, Hommes C, Jaeger C, May R and Scheffer M (2016), **Complexity theory and financial regulation**, Science. Vol. 351(6275), pp. 818-819. American Association for the Advancement of Science.
 
-Podobnik B, Horvatic D, Petersen AM and Stanley HE (2009), **Cross-correlations between volume change and price change**, Proceedings of the National Academy of Sciences. Vol. 106(52), pp. 22079-22084.
+  Podobnik B, Horvatic D, Petersen AM and Stanley HE (2009), **Cross-correlations between volume change and price change**, Proceedings of the National Academy of Sciences. Vol. 106(52), pp. 22079-22084.
 
-Zhang W, Li C, Ye Y, Li W and Ngai E (2015), **Dynamic Business Network Analysis for Correlated Stock Price Movement Prediction**, Intelligent Systems, IEEE., Mar, 2015. Vol. 30(2), pp. 26-33.
+  Zhang W, Li C, Ye Y, Li W and Ngai E (2015), **Dynamic Business Network Analysis for Correlated Stock Price Movement Prediction**, Intelligent Systems, IEEE., Mar, 2015. Vol. 30(2), pp. 26-33.
 
-in't Veld D and van Lelyveld I (2014), **Finding the core: Network structure in interbank markets**, Journal of Banking & Finance. Vol. 49, pp. 27 - 40.
+  in't Veld D and van Lelyveld I (2014), **Finding the core: Network structure in interbank markets**, Journal of Banking & Finance. Vol. 49, pp. 27 - 40.
 
-Farmer JD and Lo AW (1999), **Frontiers of finance: Evolution and efficient markets**, Proceedings of the National Academy of Sciences. Vol. 96(18), pp. 9991-9992.
+  Farmer JD and Lo AW (1999), **Frontiers of finance: Evolution and efficient markets**, Proceedings of the National Academy of Sciences. Vol. 96(18), pp. 9991-9992.
 
-Mantegna RN (1999), **Hierarchical structure in financial markets**, Eur. Phys. J. B. Vol. 11, pp. 193-197.
+  Mantegna RN (1999), **Hierarchical structure in financial markets**, Eur. Phys. J. B. Vol. 11, pp. 193-197.
 
-Brida JG and Risso WA (2010), **Hierarchical structure of the German stock market**, Expert Systems with Applications. Vol. 37(5), pp. 3846 - 3852.
+  Brida JG and Risso WA (2010), **Hierarchical structure of the German stock market**, Expert Systems with Applications. Vol. 37(5), pp. 3846 - 3852.
 
-Stefan F and Atman A (2015), **Is there any connection between the network morphology and the fluctuations of the stock market index?**, Physica A: Statistical Mechanics and its Applications. Vol. 419, pp. 630 - 641.
+  Stefan F and Atman A (2015), **Is there any connection between the network morphology and the fluctuations of the stock market index?**, Physica A: Statistical Mechanics and its Applications. Vol. 419, pp. 630 - 641.
 
-Boss M, Elsinger H, Summer M and Stefan Thurner 4 (2004), **Network topology of the interbank market**, Quantitative Finance. Vol. 4(6), pp. 677-684. Routledge.
+  Boss M, Elsinger H, Summer M and Stefan Thurner 4 (2004), **Network topology of the interbank market**, Quantitative Finance. Vol. 4(6), pp. 677-684. Routledge.
 
-Pozzi F, Di Matteo T and Aste T (2013), **Spread of risk across financial markets: better to invest in the peripheries**, Scientific Reports., April, 2013. Vol. 3, pp. 1665. The Author(s).
+  Pozzi F, Di Matteo T and Aste T (2013), **Spread of risk across financial markets: better to invest in the peripheries**, Scientific Reports., April, 2013. Vol. 3, pp. 1665. The Author(s).
 
-Tumminello M, Miccichè S, Lillo F, Piilo J and Mantegna RN (2011), **Statistically Validated Networks in Bipartite Complex Systems**, PLOS ONE., 03, 2011. Vol. 6(3), pp. 1-11. Public Library of Science.
+  Tumminello M, Miccichè S, Lillo F, Piilo J and Mantegna RN (2011), **Statistically Validated Networks in Bipartite Complex Systems**, PLOS ONE., 03, 2011. Vol. 6(3), pp. 1-11. Public Library of Science.
 
-Acemoglu D, Ozdaglar A and Tahbaz-Salehi A (2015), **Systemic Risk and Stability in Financial Networks**, The American Economic Review., 2, 2015. Vol. 105(2), pp. 564-608.
+  Acemoglu D, Ozdaglar A and Tahbaz-Salehi A (2015), **Systemic Risk and Stability in Financial Networks**, The American Economic Review., 2, 2015. Vol. 105(2), pp. 564-608.
 
-Haldane AG and May RM (2011), **Systemic risk in banking ecosystems**, Nature., 01, 2011. Vol. 469, pp. 351 EP -. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved. SN -.
+  Haldane AG and May RM (2011), **Systemic risk in banking ecosystems**, Nature., 01, 2011. Vol. 469, pp. 351 EP -. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved. SN -.
 
-Kali R and Reyes J (2007), **The architecture of globalization: a network approach to international economic integration**, Journal of International Business Studies. Vol. 38(4), pp. 595-620.
+  Kali R and Reyes J (2007), **The architecture of globalization: a network approach to international economic integration**, Journal of International Business Studies. Vol. 38(4), pp. 595-620.
 
-De Benedictis L and Tajoli L (2011), **The World Trade Network**, The World Economy. Vol. 34(8), pp. 1417-1454. Blackwell Publishing Ltd.
+  De Benedictis L and Tajoli L (2011), **The World Trade Network**, The World Economy. Vol. 34(8), pp. 1417-1454. Blackwell Publishing Ltd.
 
-Caraiani P (2013), **Using Complex Networks to Characterize International Business Cycles**, PLOS ONE., 03, 2013. Vol. 8(3), pp. 1-13. Public Library of Science.
+  Caraiani P (2013), **Using Complex Networks to Characterize International Business Cycles**, PLOS ONE., 03, 2013. Vol. 8(3), pp. 1-13. Public Library of Science.
