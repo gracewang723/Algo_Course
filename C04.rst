@@ -1,3 +1,15 @@
 ***************************
 C04 Social Network Analysis
 ***************************
+
+Material
+========
+
+Homework
+========
+
+Code
+====
+
+Literature
+==========
