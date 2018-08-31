@@ -4,7 +4,7 @@ Course Introduction
 
 * Fall 2018
 
-* Core course for undergraduates of UESTC 
+* Core course for undergraduates in UESTC 
    
 Course Mission  
 =========================
