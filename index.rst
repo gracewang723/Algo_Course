@@ -1,7 +1,7 @@
 **************************
 Course Introduction
 ************************** 
-    
+   
 Course Mission  
 =========================
  
@@ -53,23 +53,22 @@ ___________________
 **************************
 C01 Introduction
 **************************
-       
-=======
-READING
-_______
+
+  Reading
+_______________________________
 
 
 `Click HERE <https://htmlpreview.github.io/?https://github.com/gracewang723/Algo_Course/blob/master/test.html>`__
 
-MATERIAL
-________
+  Material
+_______________________________
 
-CODE
-____
-`Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C01%20Introduction.py>`__ : Hello World!
+  Code
+_______________________________
+`  Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C01%20Introduction.py>`__ : Hello World!
 
 HOMEWORK
-________
+_______________________________
 HW1:
 
 HW2:
@@ -81,27 +80,27 @@ C02 Python
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
 
 `Click HERE <https://htmlpreview.github.io/?https://github.com/gracewang723/Algo_Course/blob/master/test.html>`__
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
-`Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_Fibonacci.py>`__ : Fibonacci Sequence
+  Code
+=========================
+`  Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_Fibonacci.py>`__ : Fibonacci Sequence
 
-`Code2 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_numpy.py>`__ : Numpy
+`  Code2 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_numpy.py>`__ : Numpy
 
-`Code3 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_pandas.py>`__ : Pandas
+`  Code3 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_pandas.py>`__ : Pandas
 
-`Code4 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_scipy.py>`__ : Scipy
+`  Code4 <https://github.com/gracewang723/Algo_Course/blob/master/C02%20Python_scipy.py>`__ : Scipy
 
 HOMEWORK
-________
+=========================
 HW1:
 
 HW2:
@@ -113,17 +112,17 @@ C03 Network Science
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
 
 
 
@@ -133,17 +132,17 @@ C04 Social Network Analysis
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
 
 
 
@@ -153,17 +152,17 @@ C05 Financial Network Analysis
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
 
 
 
@@ -173,17 +172,17 @@ C06 AI Introduction
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
 
 
 
@@ -193,17 +192,17 @@ C07 Deep Learning Theory and Technology Foundation
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
 
 
 
@@ -213,17 +212,17 @@ C08 Deep Learning for Image Analysis
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
 
 
 
@@ -233,17 +232,17 @@ C09 Deep Learning for Time Serials Analysis
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
 
 
 
@@ -252,17 +251,17 @@ C10 Deep Learning for Natural Science Research
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
 
 
 
@@ -272,17 +271,17 @@ C11 Deep Learning for Bioinformatics
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
 
 
 
@@ -292,17 +291,17 @@ C12 Monte Carlo in Scientific Research
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
 
 
 
@@ -312,14 +311,14 @@ C13 Computing for Management Science
 **************************
 
 
-READING
-_______
+  Reading
+=========================
 
-MATERIAL
-________
+  Material
+=========================
 
-CODE
-____
+  Code
+=========================
 
 HOMEWORK
-________
+=========================
