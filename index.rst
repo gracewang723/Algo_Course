@@ -1,6 +1,10 @@
 **************************
 Course Introduction
 ************************** 
+
+* Fall 2018
+
+* Core course for undergraduate of UESTC 
    
 Course Mission  
 =========================
@@ -38,17 +42,16 @@ Course Target
 
 * How to use techniques to solve the problems in these fields?
 
-Course Team
-=========================
+
 Course Instructors
-__________________
-   * Dr. Yong Tang - School of Computer Science and Engineering, School of Economics and Management, UESTC
+=========================
+* Dr. Yong Tang - School of Computer Science and Engineering, School of Economics and Management, UESTC
 
 Teaching Assistants
-___________________
-   * Wei-Jia Wang - School of Information and Software, UESTC
+=========================
+* Wei-Jia Wang - School of Information and Software, UESTC
    
-   * Shi-Sheng Hu - School of ?, UESTC
+* Shi-Sheng Hu - School of ?, UESTC
    
 .. toctree::
 
