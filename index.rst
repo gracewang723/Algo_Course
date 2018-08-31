@@ -38,13 +38,14 @@ Lot’s of literature would be used and studied
 
 How to use techniques to solve the problems in these fields?
 
-Course Teaching Team
+Course Team
 =========================
+Course Instructors:
+   Dr. Yong Tang
 
-Dr. Yong Tang
-
-TA:
-Weijia Wang; Shisheng Hu
+Teaching Assistants:
+   Wei-Jia Wang
+   Shi-Sheng Hu
  
 **************************
 C01 Introduction
