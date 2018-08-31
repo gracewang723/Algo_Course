@@ -54,16 +54,16 @@ ___________________
 C01 Introduction
 **************************
 
-  Reading
+Reading
 ===============================
 
 
 `Click HERE <https://htmlpreview.github.io/?https://github.com/gracewang723/Algo_Course/blob/master/test.html>`__
 
-  Material
+Material
 ===============================
 
-  Code
+Code
 ===============================
 `  Code1 <https://github.com/gracewang723/Algo_Course/blob/master/C01%20Introduction.py>`__ : Hello World!
 
@@ -80,7 +80,7 @@ C02 Python
 **************************
 
 
-  Reading
+Reading
 =========================
 
 
