@@ -14,6 +14,6 @@ Code
 Literature
 ==========
 
-Zhou Q, Tang P, Liu S, Pan J, Yan Q and Zhang S-C (2018), **Learning atoms for materials discovery**, Proceedings of the National Academy of Sciences. National Academy of Sciences.
+  Zhou Q, Tang P, Liu S, Pan J, Yan Q and Zhang S-C (2018), **Learning atoms for materials discovery**, Proceedings of the National Academy of Sciences. National Academy of Sciences.
 
-Butler KT, Davies DW, Cartwright H, Isayev O and Walsh A (2018), **Machine learning for molecular and materials science**, Nature., July, 2018. Vol. 559(7715), pp. 547-555.
+  Butler KT, Davies DW, Cartwright H, Isayev O and Walsh A (2018), **Machine learning for molecular and materials science**, Nature., July, 2018. Vol. 559(7715), pp. 547-555.
