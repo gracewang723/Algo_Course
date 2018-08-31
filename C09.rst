@@ -14,18 +14,18 @@ Code
 Literature
 ==========
 
-Ding X, Zhang Y, Liu T and Duan J (2015), **Deep Learning for Event-Driven Stock Prediction**, In Proceedings of the Twenty-Fourth International Joint Conference on Artificial Intelligence, IJCAI 2015, Buenos Aires, Argentina, July 25-31, 2015. , pp. 2327-2333.
+  Ding X, Zhang Y, Liu T and Duan J (2015), **Deep Learning for Event-Driven Stock Prediction**, In Proceedings of the Twenty-Fourth International Joint Conference on Artificial Intelligence, IJCAI 2015, Buenos Aires, Argentina, July 25-31, 2015. , pp. 2327-2333.
 
-Chen K, Zhou Y and Dai F (2015), **A LSTM-based method for stock returns prediction: A case study of China stock market**, In 2015 IEEE International Conference on Big Data (Big Data)., Oct, 2015. , pp. 2823-2824.
+  Chen K, Zhou Y and Dai F (2015), **A LSTM-based method for stock returns prediction: A case study of China stock market**, In 2015 IEEE International Conference on Big Data (Big Data)., Oct, 2015. , pp. 2823-2824.
 
-Akita R, Yoshihara A, Matsubara T and Uehara K (2016), **Deep learning for stock prediction using numerical and textual information**, In 2016 IEEE/ACIS 15th International Conference on Computer and Information Science (ICIS)., June, 2016. , pp. 1-6.
+  Akita R, Yoshihara A, Matsubara T and Uehara K (2016), **Deep learning for stock prediction using numerical and textual information**, In 2016 IEEE/ACIS 15th International Conference on Computer and Information Science (ICIS)., June, 2016. , pp. 1-6.
 
-Chong E, Han C and Park FC (2017), **Deep learning networks for stock market analysis and prediction: Methodology, data representations, and case studies**, Expert Systems with Applications. Vol. 83, pp. 187 - 205.
+  Chong E, Han C and Park FC (2017), **Deep learning networks for stock market analysis and prediction: Methodology, data representations, and case studies**, Expert Systems with Applications. Vol. 83, pp. 187 - 205.
 
-Fischer T and Krauss C (2018), **Deep learning with long short-term memory networks for financial market predictions**, European Journal of Operational Research. Vol. 270(2), pp. 654 - 669.
+  Fischer T and Krauss C (2018), **Deep learning with long short-term memory networks for financial market predictions**, European Journal of Operational Research. Vol. 270(2), pp. 654 - 669.
 
-Alostad H and Davulcu H (2015), **Directional Prediction of Stock Prices Using Breaking News on Twitter**, In 2015 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)., Dec, 2015. Vol. 1, pp. 523-530.
+  Alostad H and Davulcu H (2015), **Directional Prediction of Stock Prices Using Breaking News on Twitter**, In 2015 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)., Dec, 2015. Vol. 1, pp. 523-530.
 
-Chen Y, He K and Tso GK (2017), **Forecasting Crude Oil Prices: a Deep Learning based Model**, Procedia Computer Science. Vol. 122, pp. 300 - 307.
+  Chen Y, He K and Tso GK (2017), **Forecasting Crude Oil Prices: a Deep Learning based Model**, Procedia Computer Science. Vol. 122, pp. 300 - 307.
 
-Rule W, Duan W, Prakash N, Zhuang N, Alvarado RC and Brown DE (2018), **Social pressure analysis of local events using social media data**, In 2018 Systems and Information Engineering Design Symposium (SIEDS)., April, 2018. , pp. 277-281.
+  Rule W, Duan W, Prakash N, Zhuang N, Alvarado RC and Brown DE (2018), **Social pressure analysis of local events using social media data**, In 2018 Systems and Information Engineering Design Symposium (SIEDS)., April, 2018. , pp. 277-281.
