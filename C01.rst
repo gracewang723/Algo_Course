@@ -15,655 +15,336 @@ Literature
 ==========
 
 
-.. code-block:: html
-
-	<!DOCTYPE HTML>
-	<html>
-	<head>
-	<title>JabRef references</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<script type="text/javascript">
-
-	var searchAbstract = true;	// search in abstract
-	var searchReview = true;	// search in review
-
-	var noSquiggles = true; 	// ignore diacritics when searching
-	var searchRegExp = false; 	// enable RegExp searches
-
-	if (window.addEventListener) {
-		window.addEventListener("load",initSearch,false); }
-	else if (window.attachEvent) {
-		window.attachEvent("onload", initSearch); }
-
-	function initSearch() {
-		// check for quick search table and searchfield
-		if (!document.getElementById('qs_table')||!document.getElementById('quicksearch')) { return; }
-
-		// load all the rows and sort into arrays
-		loadTableData();
-
-		//find the query field
-		qsfield = document.getElementById('qs_field');
-
-		// previous search term; used for speed optimisation
-		prevSearch = '';
-
-		//find statistics location
-		stats = document.getElementById('stat');
-		setStatistics(-1);
-
-		// set up preferences
-		initPreferences();
-
-		// shows the searchfield
-		document.getElementById('quicksearch').style.display = 'block';
-		document.getElementById('qs_field').onkeyup = quickSearch;
-	}
-
-	function loadTableData() {
-		// find table and appropriate rows
-		searchTable = document.getElementById('qs_table');
-		var allRows = searchTable.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
-
-		// split all rows into entryRows and infoRows (e.g. abstract, review, bibtex)
-		entryRows = new Array(); infoRows = new Array(); absRows = new Array(); revRows = new Array();
-
-		// get data from each row
-		entryRowsData = new Array(); absRowsData = new Array(); revRowsData = new Array(); 
-
-		BibTeXKeys = new Array();
-
-		for (var i=0, k=0, j=0; i<allRows.length;i++) {
-			if (allRows[i].className.match(/entry/)) {
-				entryRows[j] = allRows[i];
-				entryRowsData[j] = stripDiacritics(getTextContent(allRows[i]));
-				allRows[i].id ? BibTeXKeys[j] = allRows[i].id : allRows[i].id = 'autokey_'+j;
-				j ++;
-			} else {
-				infoRows[k++] = allRows[i];
-				// check for abstract/review
-				if (allRows[i].className.match(/abstract/)) {
-					absRows.push(allRows[i]);
-					absRowsData[j-1] = stripDiacritics(getTextContent(allRows[i]));
-				} else if (allRows[i].className.match(/review/)) {
-					revRows.push(allRows[i]);
-					revRowsData[j-1] = stripDiacritics(getTextContent(allRows[i]));
-				}
-			}
-		}
-		//number of entries and rows
-		numEntries = entryRows.length;
-		numInfo = infoRows.length;
-		numAbs = absRows.length;
-		numRev = revRows.length;
-	}
-
-	function quickSearch(){
-
-		tInput = qsfield;
-
-		if (tInput.value.length == 0) {
-			showAll();
-			setStatistics(-1);
-			qsfield.className = '';
-			return;
-		} else {
-			t = stripDiacritics(tInput.value);
-
-			if(!searchRegExp) { t = escapeRegExp(t); }
-
-			// only search for valid RegExp
-			try {
-				textRegExp = new RegExp(t,"i");
-				closeAllInfo();
-				qsfield.className = '';
-			}
-				catch(err) {
-				prevSearch = tInput.value;
-				qsfield.className = 'invalidsearch';
-				return;
-			}
-		}
-
-		// count number of hits
-		var hits = 0;
-
-		// start looping through all entry rows
-		for (var i = 0; cRow = entryRows[i]; i++){
-
-			// only show search the cells if it isn't already hidden OR if the search term is getting shorter, then search all
-			if(cRow.className.indexOf('noshow')==-1 || tInput.value.length <= prevSearch.length){
-				var found = false; 
-
-				if (entryRowsData[i].search(textRegExp) != -1 || BibTeXKeys[i].search(textRegExp) != -1){ 
-					found = true;
-				} else {
-					if(searchAbstract && absRowsData[i]!=undefined) {
-						if (absRowsData[i].search(textRegExp) != -1){ found=true; } 
-					}
-					if(searchReview && revRowsData[i]!=undefined) {
-						if (revRowsData[i].search(textRegExp) != -1){ found=true; } 
-					}
-				}
-
-				if (found){
-					cRow.className = 'entry show';
-					hits++;
-				} else {
-					cRow.className = 'entry noshow';
-				}
-			}
-		}
-
-		// update statistics
-		setStatistics(hits)
-
-		// set previous search value
-		prevSearch = tInput.value;
-	}
-
-	// Strip Diacritics from text
-	// http://stackoverflow.com/questions/990904/javascript-remove-accents-in-strings
-
-	// String containing replacement characters for stripping accents 
-	var stripstring = 
-	    'AAAAAAACEEEEIIII'+
-	    'DNOOOOO.OUUUUY..'+
-	    'aaaaaaaceeeeiiii'+
-	    'dnooooo.ouuuuy.y'+
-	    'AaAaAaCcCcCcCcDd'+
-	    'DdEeEeEeEeEeGgGg'+
-	    'GgGgHhHhIiIiIiIi'+
-	    'IiIiJjKkkLlLlLlL'+
-	    'lJlNnNnNnnNnOoOo'+
-	    'OoOoRrRrRrSsSsSs'+
-	    'SsTtTtTtUuUuUuUu'+
-	    'UuUuWwYyYZzZzZz.';
-
-	function stripDiacritics(str){
-
-	    if(noSquiggles==false){
-		return str;
-	    }
-
-	    var answer='';
-	    for(var i=0;i<str.length;i++){
-		var ch=str[i];
-		var chindex=ch.charCodeAt(0)-192;   // Index of character code in the strip string
-		if(chindex>=0 && chindex<stripstring.length){
-		    // Character is within our table, so we can strip the accent...
-		    var outch=stripstring.charAt(chindex);
-		    // ...unless it was shown as a '.'
-		    if(outch!='.')ch=outch;
-		}
-		answer+=ch;
-	    }
-	    return answer;
-	}
-
-	// http://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
-	// NOTE: must escape every \ in the export code because of the JabRef Export...
-	function escapeRegExp(str) {
-	  return str.replace(/[-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
-	}
-
-	function toggleInfo(articleid,info) {
-
-		var entry = document.getElementById(articleid);
-		var abs = document.getElementById('abs_'+articleid);
-		var rev = document.getElementById('rev_'+articleid);
-		var bib = document.getElementById('bib_'+articleid);
-
-		if (abs && info == 'abstract') {
-			abs.className.indexOf('noshow') == -1?abs.className = 'abstract noshow':abs.className = 'abstract show';
-		} else if (rev && info == 'review') {
-			rev.className.indexOf('noshow') == -1?rev.className = 'review noshow':rev.className = 'review show';
-		} else if (bib && info == 'bibtex') {
-			bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex show';
-		} else { 
-			return;
-		}
-
-		// check if one or the other is available
-		var revshow; var absshow; var bibshow;
-		(abs && abs.className.indexOf('noshow') == -1)? absshow = true: absshow = false;
-		(rev && rev.className.indexOf('noshow') == -1)? revshow = true: revshow = false;	
-		(bib && bib.className.indexOf('noshow') == -1)? bibshow = true: bibshow = false;
-
-		// highlight original entry
-		if(entry) {
-			if (revshow || absshow || bibshow) {
-			entry.className = 'entry highlight show';
-			} else {
-			entry.className = 'entry show';
-			}
-		}
-
-		// When there's a combination of abstract/review/bibtex showing, need to add class for correct styling
-		if(absshow) {
-			(revshow||bibshow)?abs.className = 'abstract nextshow':abs.className = 'abstract';
-		} 
-		if (revshow) {
-			bibshow?rev.className = 'review nextshow': rev.className = 'review';
-		}	
-
-	}
-
-	function setStatistics (hits) {
-		if(hits < 0) { hits=numEntries; }
-		if(stats) { stats.firstChild.data = hits + '/' + numEntries}
-	}
-
-	function getTextContent(node) {
-		// Function written by Arve Bersvendsen
-		// http://www.virtuelvis.com
-
-		if (node.nodeType == 3) {
-		return node.nodeValue;
-		} // text node
-		if (node.nodeType == 1 && node.className != "infolinks") { // element node
-		var text = [];
-		for (var chld = node.firstChild;chld;chld=chld.nextSibling) {
-			text.push(getTextContent(chld));
-		}
-		return text.join("");
-		} return ""; // some other node, won't contain text nodes.
-	}
-
-	function showAll(){
-		closeAllInfo();
-		for (var i = 0; i < numEntries; i++){ entryRows[i].className = 'entry show'; }
-	}
-
-	function closeAllInfo(){
-		for (var i=0; i < numInfo; i++){
-			if (infoRows[i].className.indexOf('noshow') ==-1) {
-				infoRows[i].className = infoRows[i].className + ' noshow';
-			}
-		}
-	}
-
-	function clearQS() {
-		qsfield.value = '';
-		showAll();
-	}
-
-	function redoQS(){
-		showAll();
-		quickSearch(qsfield);
-	}
-
-	function updateSetting(obj){
-		var option = obj.id;
-		var checked = obj.value;
-
-		switch(option)
-		 {
-		 case "opt_searchAbs":
-		   searchAbstract=!searchAbstract;
-		   redoQS();
-		   break;
-		 case "opt_searchRev":
-		   searchReview=!searchReview;
-		   redoQS();
-		   break;
-		 case "opt_useRegExp":
-		   searchRegExp=!searchRegExp;
-		   redoQS();
-		   break;
-		 case "opt_noAccents":
-		   noSquiggles=!noSquiggles;
-		   loadTableData();
-		   redoQS();
-		   break;
-		 }
-	}
-
-	function initPreferences(){
-		if(searchAbstract){document.getElementById("opt_searchAbs").checked = true;}
-		if(searchReview){document.getElementById("opt_searchRev").checked = true;}
-		if(noSquiggles){document.getElementById("opt_noAccents").checked = true;}
-		if(searchRegExp){document.getElementById("opt_useRegExp").checked = true;}
-
-		if(numAbs==0) {document.getElementById("opt_searchAbs").parentNode.style.display = 'none';}
-		if(numRev==0) {document.getElementById("opt_searchRev").parentNode.style.display = 'none';}	
-	}
-
-	function toggleSettings(){
-		var togglebutton = document.getElementById('showsettings');
-		var settings = document.getElementById('settings');
-
-		if(settings.className == "hidden"){
-			settings.className = "show";
-			togglebutton.innerText = "close settings";
-			togglebutton.textContent = "close settings";
-		}else{
-			settings.className = "hidden";
-			togglebutton.innerText = "settings...";		
-			togglebutton.textContent = "settings...";
-		}
-	}
-
-	-->
-	</script>
-	<style type="text/css">
-	body { background-color: white; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.2; padding: 1em; color: #2E2E2E; width: 50em; margin: auto auto; }
-
-	form#quicksearch { width: auto; border-style: solid; border-color: gray; border-width: 1px 0px; padding: 0.7em 0.5em; display:none; position:relative; }
-	span#searchstat {padding-left: 1em;}
-
-	div#settings { margin-top:0.7em; /* border-bottom: 1px transparent solid; background-color: #efefef; border: 1px grey solid; */ }
-	div#settings ul {margin: 0; padding: 0; }
-	div#settings li {margin: 0; padding: 0 1em 0 0; display: inline; list-style: none; }
-	div#settings li + li { border-left: 2px #efefef solid; padding-left: 0.5em;}
-	div#settings input { margin-bottom: 0px;}
-
-	div#settings.hidden {display:none;}
-
-	#showsettings { border: 1px grey solid; padding: 0 0.5em; float:right; line-height: 1.6em; text-align: right; }
-	#showsettings:hover { cursor: pointer; }
-
-	.invalidsearch { background-color: red; }
-	input[type="button"] { background-color: #efefef; border: 1px #2E2E2E solid;}
-
-	table { border: 1px gray none; width: 100%; empty-cells: show; border-spacing: 0em 0.1em; margin: 1em 0em; }
-	th, td { border: none; padding: 0.5em; vertical-align: top; text-align: justify; }
-
-	td a { color: navy; text-decoration: none; }
-	td a:hover  { text-decoration: underline; }
-
-	tr.noshow { display: none;}
-	tr.highlight td { background-color: #EFEFEF; border-top: 2px #2E2E2E solid; font-weight: bold; }
-	tr.abstract td, tr.review td, tr.bibtex td { background-color: #EFEFEF; text-align: justify; border-bottom: 2px #2E2E2E solid; }
-	tr.nextshow td { border-bottom-style: none; }
-
-	tr.bibtex pre { width: 100%; overflow: auto; white-space: pre-wrap;}
-	p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
-
-	@media print {
-		p.infolinks, #qs_settings, #quicksearch, t.bibtex { display: none !important; }
-		tr { page-break-inside: avoid; }
-	}
-	</style>
-	</head>
-	<body>
-
-	<form action="" id="quicksearch">
-	<input type="text" id="qs_field" autocomplete="off" placeholder="Type to search..." /> <input type="button" onclick="clearQS()" value="clear" />
-	<span id="searchstat">Matching entries: <span id="stat">0</span></span>
-	<div id="showsettings" onclick="toggleSettings()">settings...</div>
-	<div id="settings" class="hidden">
-
-	*   <input type="checkbox" class="search_setting" id="opt_searchAbs" onchange="updateSetting(this)"><label for="opt_searchAbs"> include abstract</label>
-	*   <input type="checkbox" class="search_setting" id="opt_searchRev" onchange="updateSetting(this)"><label for="opt_searchRev"> include review</label>
-	*   <input type="checkbox" class="search_setting" id="opt_useRegExp" onchange="updateSetting(this)"><label for="opt_useRegExp"> use RegExp</label>
-	*   <input type="checkbox" class="search_setting" id="opt_noAccents" onchange="updateSetting(this)"><label for="opt_noAccents"> ignore accents</label>
-	</div>
-	</form>
-	<table id="qs_table" border="1">
-	<tbody>
-	<tr id="Norouzzadeh2018" class="entry">
-		<td>Norouzzadeh MS, Nguyen A, Kosmala M, Swanson A, Palmer MS, Packer C and Clune J (2018), _"Automatically identifying, counting, and describing wild animals in camera-trap images with deep learning"_, Proceedings of the National Academy of Sciences.  National Academy of Sciences.
-
-	[[Abstract](javascript:toggleInfo()] [[BibTeX](javascript:toggleInfo()] [[DOI](https://doi.org/10.1073/pnas.1719367115)] [[URL](http://www.pnas.org/content/early/2018/06/04/1719367115)]
-
-		</td>
-	</tr>
-	<tr id="abs_Norouzzadeh2018" class="abstract noshow">
-		<td>**Abstract**: Motion-sensor cameras in natural habitats offer the opportunity to inexpensively and unobtrusively gather vast amounts of data on animals in the wild. A key obstacle to harnessing their potential is the great cost of having humans analyze each image. Here, we demonstrate that a cutting-edge type of artificial intelligence called deep neural networks can automatically extract such invaluable information. For example, we show deep learning can automate animal identification for 99.3&#37; of the 3.2 million-image Snapshot Serengeti dataset while performing at the same 96.6&#37; accuracy of crowdsourced teams of human volunteers. Automatically, accurately, and inexpensively collecting such data could help catalyze the transformation of many fields of ecology, wildlife biology, zoology, conservation biology, and animal behavior into &ldquo;big data&rdquo; sciences.Having accurate, detailed, and up-to-date information about the location and behavior of animals in the wild would improve our ability to study and conserve ecosystems. We investigate the ability to automatically, accurately, and inexpensively collect such data, which could help catalyze the transformation of many fields of ecology, wildlife biology, zoology, conservation biology, and animal behavior into &ldquo;big data&rdquo; sciences. Motion-sensor &ldquo;camera traps&rdquo; enable collecting wildlife pictures inexpensively, unobtrusively, and frequently. However, extracting information from these pictures remains an expensive, time-consuming, manual task. We demonstrate that such information can be automatically extracted by deep learning, a cutting-edge type of artificial intelligence. We train deep convolutional neural networks to identify, count, and describe the behaviors of 48 species in the 3.2 million-image Snapshot Serengeti dataset. Our deep neural networks automatically identify animals with &amp;gt;93.8&#37; accuracy, and we expect that number to improve rapidly in years to come. More importantly, if our system classifies only images it is confident about, our system can automate animal identification for 99.3&#37; of the data while still performing at the same 96.6&#37; accuracy as that of crowdsourced teams of human volunteers, saving &amp;gt;8.4 y (i.e., &amp;gt;17,000 h at 40 h/wk) of human labeling effort on this 3.2 million-image dataset. Those efficiency gains highlight the importance of using deep neural networks to automate data extraction from camera-trap images, reducing a roadblock for this widely used technology. Our results suggest that deep learning could enable the inexpensive, unobtrusive, high-volume, and even real-time collection of a wealth of information about vast numbers of animals in the wild.</td>
-	</tr>
-	<tr id="bib_Norouzzadeh2018" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@article{Norouzzadeh2018,
-	  author = {Norouzzadeh, Mohammad Sadegh and Nguyen, Anh and Kosmala, Margaret and Swanson, Alexandra and Palmer, Meredith S. and Packer, Craig and Clune, Jeff},
-	  title = {Automatically identifying, counting, and describing wild animals in camera-trap images with deep learning},
-	  journal = {Proceedings of the National Academy of Sciences},
-	  publisher = {National Academy of Sciences},
-	  year = {2018},
-	  url = {http://www.pnas.org/content/early/2018/06/04/1719367115},
-	  doi = {10.1073/pnas.1719367115}
-	}
-	</pre></td>
-	</tr>
-	<tr id="Jean2016" class="entry">
-		<td>Jean N, Burke M, Xie M, Davis WM, Lobell DB and Ermon S (2016), _"Combining satellite imagery and machine learning to predict poverty"_, Science.  Vol. 353(6301), pp. 790-794. American Association for the Advancement of Science.
-
-	[[Abstract](javascript:toggleInfo()] [[BibTeX](javascript:toggleInfo()] [[DOI](https://doi.org/10.1126/science.aaf7894)] [[URL](http://science.sciencemag.org/content/353/6301/790)]
-
-		</td>
-	</tr>
-	<tr id="abs_Jean2016" class="abstract noshow">
-		<td>**Abstract**: Nighttime lighting is a rough proxy for economic wealth, and nighttime maps of the world show that many developing countries are sparsely illuminated. Jean et al. combined nighttime maps with high-resolution daytime satellite images (see the Perspective by Blumenstock). With a bit of machine-learning wizardry, the combined images can be converted into accurate estimates of household consumption and assets, both of which are hard to measure in poorer countries. Furthermore, the night- and day-time data are publicly available and nonproprietary.Science, this issue p. 790; see also p. 753Reliable data on economic livelihoods remain scarce in the developing world, hampering efforts to study these outcomes and to design policies that improve them. Here we demonstrate an accurate, inexpensive, and scalable method for estimating consumption expenditure and asset wealth from high-resolution satellite imagery. Using survey and satellite data from five African countries&mdash;Nigeria, Tanzania, Uganda, Malawi, and Rwanda&mdash;we show how a convolutional neural network can be trained to identify image features that can explain up to 75&#37; of the variation in local-level economic outcomes. Our method, which requires only publicly available data, could transform efforts to track and target poverty in developing countries. It also demonstrates how powerful machine learning techniques can be applied in a setting with limited training data, suggesting broad potential application across many scientific domains.</td>
-	</tr>
-	<tr id="bib_Jean2016" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@article{Jean2016,
-	  author = {Jean, Neal and Burke, Marshall and Xie, Michael and Davis, W. Matthew and Lobell, David B. and Ermon, Stefano},
-	  title = {Combining satellite imagery and machine learning to predict poverty},
-	  journal = {Science},
-	  publisher = {American Association for the Advancement of Science},
-	  year = {2016},
-	  volume = {353},
-	  number = {6301},
-	  pages = {790--794},
-	  url = {http://science.sciencemag.org/content/353/6301/790},
-	  doi = {10.1126/science.aaf7894}
-	}
-	</pre></td>
-	</tr>
-	<tr id="LeCun2015" class="entry">
-		<td>LeCun Y, Bengio Y and Hinton G (2015), _"Deep learning"_, Nature., 05, 2015.  Vol. 521, pp. 436 EP -. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved. SN -.
-
-	 [[BibTeX](javascript:toggleInfo()] [[URL](http://dx.doi.org/10.1038/nature14539)]
-
-		</td>
-	</tr>
-	<tr id="bib_LeCun2015" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@article{LeCun2015,
-	  author = {LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
-	  title = {Deep learning},
-	  journal = {Nature},
-	  publisher = {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved. SN -},
-	  year = {2015},
-	  volume = {521},
-	  pages = {436 EP -},
-	  url = {http://dx.doi.org/10.1038/nature14539}
-	}
-	</pre></td>
-	</tr>
-	<tr id="Ouyang2018" class="entry">
-		<td>Ouyang W, Aristov A, Lelek M, Hao X and Zimmer C (2018), _"Deep learning massively accelerates super-resolution localization microscopy"_, Nature Biotechnology., April, 2018.  Vol. 36, pp. 460. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved..
-
-	 [[BibTeX](javascript:toggleInfo()] [[URL](http://dx.doi.org/10.1038/nbt.4106)]
-
-		</td>
-	</tr>
-	<tr id="bib_Ouyang2018" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@article{Ouyang2018,
-	  author = {Ouyang, Wei and Aristov, Andrey and Lelek, Mickaël and Hao, Xian and Zimmer, Christophe},
-	  title = {Deep learning massively accelerates super-resolution localization microscopy},
-	  journal = {Nature Biotechnology},
-	  publisher = {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.},
-	  year = {2018},
-	  volume = {36},
-	  pages = {460},
-	  url = {http://dx.doi.org/10.1038/nbt.4106}
-	}
-	</pre></td>
-	</tr>
-	<tr id="Shen2017" class="entry">
-		<td>Shen Y, Harris NC, Skirlo S, Prabhu M, Baehr-Jones T, Hochberg M, Sun X, Zhao S, Larochelle H, Englund D and Soljačić M (2017), _"Deep learning with coherent nanophotonic circuits"_, Nature Photonics., June, 2017.  Vol. 11, pp. 441. Nature Publishing Group.
-
-	 [[BibTeX](javascript:toggleInfo()] [[URL](http://dx.doi.org/10.1038/nphoton.2017.93)]
-
-		</td>
-	</tr>
-	<tr id="bib_Shen2017" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@article{Shen2017,
-	  author = {Shen, Yichen and Harris, Nicholas C. and Skirlo, Scott and Prabhu, Mihika and Baehr-Jones, Tom and Hochberg, Michael and Sun, Xin and Zhao, Shijie and Larochelle, Hugo and Englund, Dirk and Soljačić, Marin},
-	  title = {Deep learning with coherent nanophotonic circuits},
-	  journal = {Nature Photonics},
-	  publisher = {Nature Publishing Group},
-	  year = {2017},
-	  volume = {11},
-	  pages = {441},
-	  url = {http://dx.doi.org/10.1038/nphoton.2017.93}
-	}
-	</pre></td>
-	</tr>
-	<tr id="Chiles2018" class="entry">
-		<td>Chiles J, Buckley SM, Nam SW, Mirin RP and Shainline JM (2018), _"Design, fabrication, and metrology of 10 × 100 multi-planar integrated photonic routing manifolds for neural networks"_, APL Photonics.  Vol. 3(10), pp. 106101.
-
-	 [[BibTeX](javascript:toggleInfo()] [[DOI](https://doi.org/10.1063/1.5039641)] [[URL](https://doi.org/10.1063/1.5039641)]
-
-		</td>
-	</tr>
-	<tr id="bib_Chiles2018" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@article{Chiles2018,
-	  author = {Chiles,Jeff and Buckley,Sonia M. and Nam,Sae Woo and Mirin,Richard P. and Shainline,Jeffrey M.},
-	  title = {Design, fabrication, and metrology of 10 × 100 multi-planar integrated photonic routing manifolds for neural networks},
-	  journal = {APL Photonics},
-	  year = {2018},
-	  volume = {3},
-	  number = {10},
-	  pages = {106101},
-	  url = {https://doi.org/10.1063/1.5039641},
-	  doi = {10.1063/1.5039641}
-	}
-	</pre></td>
-	</tr>
-	<tr id="Lecun1998" class="entry">
-		<td>Lecun Y, Bottou L, Bengio Y and Haffner P (1998), _"Gradient-based learning applied to document recognition"_, Proceedings of the IEEE., Nov, 1998.  Vol. 86(11), pp. 2278-2324.
-
-	[[Abstract](javascript:toggleInfo()] [[BibTeX](javascript:toggleInfo()] [[DOI](https://doi.org/10.1109/5.726791)]
-
-		</td>
-	</tr>
-	<tr id="abs_Lecun1998" class="abstract noshow">
-		<td>**Abstract**: Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day.</td>
-	</tr>
-	<tr id="bib_Lecun1998" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@article{Lecun1998,
-	  author = {Y. Lecun and L. Bottou and Y. Bengio and P. Haffner},
-	  title = {Gradient-based learning applied to document recognition},
-	  journal = {Proceedings of the IEEE},
-	  year = {1998},
-	  volume = {86},
-	  number = {11},
-	  pages = {2278-2324},
-	  doi = {10.1109/5.726791}
-	}
-	</pre></td>
-	</tr>
-	<tr id="Krizhevsky2012" class="entry">
-		<td>Krizhevsky A, Sutskever I and Hinton GE (2012), _"ImageNet Classification with Deep Convolutional Neural Networks"_, In Advances in Neural Information Processing Systems 25. , pp. 1097-1105. Curran Associates, Inc..
-
-	 [[BibTeX](javascript:toggleInfo()] [[URL](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)]
-
-		</td>
-	</tr>
-	<tr id="bib_Krizhevsky2012" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@incollection{Krizhevsky2012,
-	  author = {Alex Krizhevsky and Sutskever, Ilya and Hinton, Geoffrey E},
-	  editor = {F. Pereira and C. J. C. Burges and L. Bottou and K. Q. Weinberger},
-	  title = {ImageNet Classification with Deep Convolutional Neural Networks},
-	  booktitle = {Advances in Neural Information Processing Systems 25},
-	  publisher = {Curran Associates, Inc.},
-	  year = {2012},
-	  pages = {1097--1105},
-	  url = {http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf}
-	}
-	</pre></td>
-	</tr>
-	<tr id="Silver2016" class="entry">
-		<td>Silver D, Huang A, Maddison CJ, Guez A, Sifre L, van den Driessche G, Schrittwieser J, Antonoglou I, Panneershelvam V, Lanctot M, Dieleman S, Grewe D, Nham J, Kalchbrenner N, Sutskever I, Lillicrap T, Leach M, Kavukcuoglu K, Graepel T and Hassabis D (2016), _"Mastering the game of Go with deep neural networks and tree search"_, Nature., January, 2016.  Vol. 529, pp. 484. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved..
-
-	 [[BibTeX](javascript:toggleInfo()] [[URL](http://dx.doi.org/10.1038/nature16961)]
-
-		</td>
-	</tr>
-	<tr id="bib_Silver2016" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@article{Silver2016,
-	  author = {Silver, David and Huang, Aja and Maddison, Chris J. and Guez, Arthur and Sifre, Laurent and van den Driessche, George and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and Dieleman, Sander and Grewe, Dominik and Nham, John and Kalchbrenner, Nal and Sutskever, Ilya and Lillicrap, Timothy and Leach, Madeleine and Kavukcuoglu, Koray and Graepel, Thore and Hassabis, Demis},
-	  title = {Mastering the game of Go with deep neural networks and tree search},
-	  journal = {Nature},
-	  publisher = {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.},
-	  year = {2016},
-	  volume = {529},
-	  pages = {484},
-	  url = {http://dx.doi.org/10.1038/nature16961}
-	}
-	</pre></td>
-	</tr>
-	<tr id="Gebru2017" class="entry">
-		<td>Gebru T, Krause J, Wang Y, Chen D, Deng J, Aiden EL and Fei-Fei L (2017), _"Using deep learning and Google Street View to estimate the demographic makeup of neighborhoods across the United States"_, Proceedings of the National Academy of Sciences.  National Academy of Sciences.
-
-	[[Abstract](javascript:toggleInfo()] [[BibTeX](javascript:toggleInfo()] [[DOI](https://doi.org/10.1073/pnas.1700035114)] [[URL](http://www.pnas.org/content/early/2017/11/27/1700035114)]
-
-		</td>
-	</tr>
-	<tr id="abs_Gebru2017" class="abstract noshow">
-		<td>**Abstract**: We show that socioeconomic attributes such as income, race, education, and voting patterns can be inferred from cars detected in Google Street View images using deep learning. Our model works by discovering associations between cars and people. For example, if the number of sedans in a city is higher than the number of pickup trucks, that city is likely to vote for a Democrat in the next presidential election (88&#37; chance); if not, then the city is likely to vote for a Republican (82&#37; chance).The United States spends more than $250 million each year on the American Community Survey (ACS), a labor-intensive door-to-door study that measures statistics relating to race, gender, education, occupation, unemployment, and other demographic factors. Although a comprehensive source of data, the lag between demographic changes and their appearance in the ACS can exceed several years. As digital imagery becomes ubiquitous and machine vision techniques improve, automated data analysis may become an increasingly practical supplement to the ACS. Here, we present a method that estimates socioeconomic characteristics of regions spanning 200 US cities by using 50 million images of street scenes gathered with Google Street View cars. Using deep learning-based computer vision techniques, we determined the make, model, and year of all motor vehicles encountered in particular neighborhoods. Data from this census of motor vehicles, which enumerated 22 million automobiles in total (8&#37; of all automobiles in the United States), were used to accurately estimate income, race, education, and voting patterns at the zip code and precinct level. (The average US precinct contains &tilde;1,000 people.) The resulting associations are surprisingly simple and powerful. For instance, if the number of sedans encountered during a drive through a city is higher than the number of pickup trucks, the city is likely to vote for a Democrat during the next presidential election (88&#37; chance); otherwise, it is likely to vote Republican (82. Our results suggest that automated systems for monitoring demographics may effectively complement labor-intensive approaches, with the potential to measure demographics with fine spatial resolution, in close to real time.</td>
-	</tr>
-	<tr id="bib_Gebru2017" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@article{Gebru2017,
-	  author = {Gebru, Timnit and Krause, Jonathan and Wang, Yilun and Chen, Duyun and Deng, Jia and Aiden, Erez Lieberman and Fei-Fei, Li},
-	  title = {Using deep learning and Google Street View to estimate the demographic makeup of neighborhoods across the United States},
-	  journal = {Proceedings of the National Academy of Sciences},
-	  publisher = {National Academy of Sciences},
-	  year = {2017},
-	  url = {http://www.pnas.org/content/early/2017/11/27/1700035114},
-	  doi = {10.1073/pnas.1700035114}
-	}
-	</pre></td>
-	</tr>
-	<tr id="Zeiler2014" class="entry">
-		<td>Zeiler MD and Fergus R (2014), _"Visualizing and Understanding Convolutional Networks"_, In Computer Vision -- ECCV 2014. Cham , pp. 818-833. Springer International Publishing.
-
-	[[Abstract](javascript:toggleInfo()] [[BibTeX](javascript:toggleInfo()]
-
-		</td>
-	</tr>
-	<tr id="abs_Zeiler2014" class="abstract noshow">
-		<td>**Abstract**: Large Convolutional Network models have recently demonstrated impressive classification performance on the ImageNet benchmark Krizhevsky et al. [18]. However there is no clear understanding of why they perform so well, or how they might be improved. In this paper we explore both issues. We introduce a novel visualization technique that gives insight into the function of intermediate feature layers and the operation of the classifier. Used in a diagnostic role, these visualizations allow us to find model architectures that outperform Krizhevsky et al on the ImageNet classification benchmark. We also perform an ablation study to discover the performance contribution from different model layers. We show our ImageNet model generalizes well to other datasets: when the softmax classifier is retrained, it convincingly beats the current state-of-the-art results on Caltech-101 and Caltech-256 datasets.</td>
-	</tr>
-	<tr id="bib_Zeiler2014" class="bibtex noshow">
-	<td>**BibTeX**:
-	<pre>
-	@inproceedings{Zeiler2014,
-	  author = {Zeiler, Matthew D. and Fergus, Rob},
-	  editor = {Fleet, David and Pajdla, Tomas and Schiele, Bernt and Tuytelaars, Tinne},
-	  title = {Visualizing and Understanding Convolutional Networks},
-	  booktitle = {Computer Vision -- ECCV 2014},
-	  publisher = {Springer International Publishing},
-	  year = {2014},
-	  pages = {818--833}
-	}
-	</pre></td>
-	</tr>
-	</tbody>
-	</table>
-	<footer>
-	 <small>Created by [JabRef](http://jabref.sourceforge.net) on 30/08/2018.</small>
-	</footer>
-	<!-- file generated by JabRef -->
-	</body>
-	</html>
+<form action="" id="quicksearch"><input type="text" id="qs_field" autocomplete="off" placeholder="Type to search..."> <input type="button" onclick="clearQS()" value="clear"> <span id="searchstat">Matching entries: <span id="stat">0</span></span>
+
+<div id="showsettings" onclick="toggleSettings()">settings...</div>
+
+<div id="settings" class="hidden">* <input type="checkbox" class="search_setting" id="opt_searchAbs" onchange="updateSetting(this)"> <label for="opt_searchAbs">include abstract</label> * <input type="checkbox" class="search_setting" id="opt_searchRev" onchange="updateSetting(this)"> <label for="opt_searchRev">include review</label> * <input type="checkbox" class="search_setting" id="opt_useRegExp" onchange="updateSetting(this)"> <label for="opt_useRegExp">use RegExp</label> * <input type="checkbox" class="search_setting" id="opt_noAccents" onchange="updateSetting(this)"> <label for="opt_noAccents">ignore accents</label></div>
+
+</form>
+
+<table id="qs_table" border="1">
+
+<tbody>
+
+<tr id="Norouzzadeh2018" class="entry">
+
+<td>Norouzzadeh MS, Nguyen A, Kosmala M, Swanson A, Palmer MS, Packer C and Clune J (2018), _"Automatically identifying, counting, and describing wild animals in camera-trap images with deep learning"_, Proceedings of the National Academy of Sciences. National Academy of Sciences. [[Abstract](javascript:toggleInfo('Norouzzadeh2018','abstract'))] [[BibTeX](javascript:toggleInfo('Norouzzadeh2018','bibtex'))] [[DOI](https://doi.org/10.1073/pnas.1719367115)] [[URL](http://www.pnas.org/content/early/2018/06/04/1719367115)]</td>
+
+</tr>
+
+<tr id="abs_Norouzzadeh2018" class="abstract noshow">
+
+<td>**Abstract**: Motion-sensor cameras in natural habitats offer the opportunity to inexpensively and unobtrusively gather vast amounts of data on animals in the wild. A key obstacle to harnessing their potential is the great cost of having humans analyze each image. Here, we demonstrate that a cutting-edge type of artificial intelligence called deep neural networks can automatically extract such invaluable information. For example, we show deep learning can automate animal identification for 99.3% of the 3.2 million-image Snapshot Serengeti dataset while performing at the same 96.6% accuracy of crowdsourced teams of human volunteers. Automatically, accurately, and inexpensively collecting such data could help catalyze the transformation of many fields of ecology, wildlife biology, zoology, conservation biology, and animal behavior into “big data” sciences.Having accurate, detailed, and up-to-date information about the location and behavior of animals in the wild would improve our ability to study and conserve ecosystems. We investigate the ability to automatically, accurately, and inexpensively collect such data, which could help catalyze the transformation of many fields of ecology, wildlife biology, zoology, conservation biology, and animal behavior into “big data” sciences. Motion-sensor “camera traps” enable collecting wildlife pictures inexpensively, unobtrusively, and frequently. However, extracting information from these pictures remains an expensive, time-consuming, manual task. We demonstrate that such information can be automatically extracted by deep learning, a cutting-edge type of artificial intelligence. We train deep convolutional neural networks to identify, count, and describe the behaviors of 48 species in the 3.2 million-image Snapshot Serengeti dataset. Our deep neural networks automatically identify animals with >93.8% accuracy, and we expect that number to improve rapidly in years to come. More importantly, if our system classifies only images it is confident about, our system can automate animal identification for 99.3% of the data while still performing at the same 96.6% accuracy as that of crowdsourced teams of human volunteers, saving >8.4 y (i.e., >17,000 h at 40 h/wk) of human labeling effort on this 3.2 million-image dataset. Those efficiency gains highlight the importance of using deep neural networks to automate data extraction from camera-trap images, reducing a roadblock for this widely used technology. Our results suggest that deep learning could enable the inexpensive, unobtrusive, high-volume, and even real-time collection of a wealth of information about vast numbers of animals in the wild.</td>
+
+</tr>
+
+<tr id="bib_Norouzzadeh2018" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@article{Norouzzadeh2018,
+  author = {Norouzzadeh, Mohammad Sadegh and Nguyen, Anh and Kosmala, Margaret and Swanson, Alexandra and Palmer, Meredith S. and Packer, Craig and Clune, Jeff},
+  title = {Automatically identifying, counting, and describing wild animals in camera-trap images with deep learning},
+  journal = {Proceedings of the National Academy of Sciences},
+  publisher = {National Academy of Sciences},
+  year = {2018},
+  url = {http://www.pnas.org/content/early/2018/06/04/1719367115},
+  doi = {10.1073/pnas.1719367115}
+}
+</pre>
+
+</td>
+
+</tr>
+
+<tr id="Jean2016" class="entry">
+
+<td>Jean N, Burke M, Xie M, Davis WM, Lobell DB and Ermon S (2016), _"Combining satellite imagery and machine learning to predict poverty"_, Science. Vol. 353(6301), pp. 790-794\. American Association for the Advancement of Science. [[Abstract](javascript:toggleInfo('Jean2016','abstract'))] [[BibTeX](javascript:toggleInfo('Jean2016','bibtex'))] [[DOI](https://doi.org/10.1126/science.aaf7894)] [[URL](http://science.sciencemag.org/content/353/6301/790)]</td>
+
+</tr>
+
+<tr id="abs_Jean2016" class="abstract noshow">
+
+<td>**Abstract**: Nighttime lighting is a rough proxy for economic wealth, and nighttime maps of the world show that many developing countries are sparsely illuminated. Jean et al. combined nighttime maps with high-resolution daytime satellite images (see the Perspective by Blumenstock). With a bit of machine-learning wizardry, the combined images can be converted into accurate estimates of household consumption and assets, both of which are hard to measure in poorer countries. Furthermore, the night- and day-time data are publicly available and nonproprietary.Science, this issue p. 790; see also p. 753Reliable data on economic livelihoods remain scarce in the developing world, hampering efforts to study these outcomes and to design policies that improve them. Here we demonstrate an accurate, inexpensive, and scalable method for estimating consumption expenditure and asset wealth from high-resolution satellite imagery. Using survey and satellite data from five African countries—Nigeria, Tanzania, Uganda, Malawi, and Rwanda—we show how a convolutional neural network can be trained to identify image features that can explain up to 75% of the variation in local-level economic outcomes. Our method, which requires only publicly available data, could transform efforts to track and target poverty in developing countries. It also demonstrates how powerful machine learning techniques can be applied in a setting with limited training data, suggesting broad potential application across many scientific domains.</td>
+
+</tr>
+
+<tr id="bib_Jean2016" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@article{Jean2016,
+  author = {Jean, Neal and Burke, Marshall and Xie, Michael and Davis, W. Matthew and Lobell, David B. and Ermon, Stefano},
+  title = {Combining satellite imagery and machine learning to predict poverty},
+  journal = {Science},
+  publisher = {American Association for the Advancement of Science},
+  year = {2016},
+  volume = {353},
+  number = {6301},
+  pages = {790--794},
+  url = {http://science.sciencemag.org/content/353/6301/790},
+  doi = {10.1126/science.aaf7894}
+}
+</pre>
+
+</td>
+
+</tr>
+
+<tr id="LeCun2015" class="entry">
+
+<td>LeCun Y, Bengio Y and Hinton G (2015), _"Deep learning"_, Nature., 05, 2015\. Vol. 521, pp. 436 EP -. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved. SN -. [[BibTeX](javascript:toggleInfo('LeCun2015','bibtex'))] [[URL](http://dx.doi.org/10.1038/nature14539)]</td>
+
+</tr>
+
+<tr id="bib_LeCun2015" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@article{LeCun2015,
+  author = {LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+  title = {Deep learning},
+  journal = {Nature},
+  publisher = {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved. SN -},
+  year = {2015},
+  volume = {521},
+  pages = {436 EP -},
+  url = {http://dx.doi.org/10.1038/nature14539}
+}
+</pre>
+
+</td>
+
+</tr>
+
+<tr id="Ouyang2018" class="entry">
+
+<td>Ouyang W, Aristov A, Lelek M, Hao X and Zimmer C (2018), _"Deep learning massively accelerates super-resolution localization microscopy"_, Nature Biotechnology., April, 2018\. Vol. 36, pp. 460\. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.. [[BibTeX](javascript:toggleInfo('Ouyang2018','bibtex'))] [[URL](http://dx.doi.org/10.1038/nbt.4106)]</td>
+
+</tr>
+
+<tr id="bib_Ouyang2018" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@article{Ouyang2018,
+  author = {Ouyang, Wei and Aristov, Andrey and Lelek, Mickaël and Hao, Xian and Zimmer, Christophe},
+  title = {Deep learning massively accelerates super-resolution localization microscopy},
+  journal = {Nature Biotechnology},
+  publisher = {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.},
+  year = {2018},
+  volume = {36},
+  pages = {460},
+  url = {http://dx.doi.org/10.1038/nbt.4106}
+}
+</pre>
+
+</td>
+
+</tr>
+
+<tr id="Shen2017" class="entry">
+
+<td>Shen Y, Harris NC, Skirlo S, Prabhu M, Baehr-Jones T, Hochberg M, Sun X, Zhao S, Larochelle H, Englund D and Soljačić M (2017), _"Deep learning with coherent nanophotonic circuits"_, Nature Photonics., June, 2017\. Vol. 11, pp. 441\. Nature Publishing Group. [[BibTeX](javascript:toggleInfo('Shen2017','bibtex'))] [[URL](http://dx.doi.org/10.1038/nphoton.2017.93)]</td>
+
+</tr>
+
+<tr id="bib_Shen2017" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@article{Shen2017,
+  author = {Shen, Yichen and Harris, Nicholas C. and Skirlo, Scott and Prabhu, Mihika and Baehr-Jones, Tom and Hochberg, Michael and Sun, Xin and Zhao, Shijie and Larochelle, Hugo and Englund, Dirk and Soljačić, Marin},
+  title = {Deep learning with coherent nanophotonic circuits},
+  journal = {Nature Photonics},
+  publisher = {Nature Publishing Group},
+  year = {2017},
+  volume = {11},
+  pages = {441},
+  url = {http://dx.doi.org/10.1038/nphoton.2017.93}
+}
+</pre>
+
+</td>
+
+</tr>
+
+<tr id="Chiles2018" class="entry">
+
+<td>Chiles J, Buckley SM, Nam SW, Mirin RP and Shainline JM (2018), _"Design, fabrication, and metrology of 10 × 100 multi-planar integrated photonic routing manifolds for neural networks"_, APL Photonics. Vol. 3(10), pp. 106101\. [[BibTeX](javascript:toggleInfo('Chiles2018','bibtex'))] [[DOI](https://doi.org/10.1063/1.5039641)] [[URL](https://doi.org/10.1063/1.5039641)]</td>
+
+</tr>
+
+<tr id="bib_Chiles2018" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@article{Chiles2018,
+  author = {Chiles,Jeff and Buckley,Sonia M. and Nam,Sae Woo and Mirin,Richard P. and Shainline,Jeffrey M.},
+  title = {Design, fabrication, and metrology of 10 × 100 multi-planar integrated photonic routing manifolds for neural networks},
+  journal = {APL Photonics},
+  year = {2018},
+  volume = {3},
+  number = {10},
+  pages = {106101},
+  url = {https://doi.org/10.1063/1.5039641},
+  doi = {10.1063/1.5039641}
+}
+</pre>
+
+</td>
+
+</tr>
+
+<tr id="Lecun1998" class="entry">
+
+<td>Lecun Y, Bottou L, Bengio Y and Haffner P (1998), _"Gradient-based learning applied to document recognition"_, Proceedings of the IEEE., Nov, 1998\. Vol. 86(11), pp. 2278-2324\. [[Abstract](javascript:toggleInfo('Lecun1998','abstract'))] [[BibTeX](javascript:toggleInfo('Lecun1998','bibtex'))] [[DOI](https://doi.org/10.1109/5.726791)]</td>
+
+</tr>
+
+<tr id="abs_Lecun1998" class="abstract noshow">
+
+<td>**Abstract**: Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day.</td>
+
+</tr>
+
+<tr id="bib_Lecun1998" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@article{Lecun1998,
+  author = {Y. Lecun and L. Bottou and Y. Bengio and P. Haffner},
+  title = {Gradient-based learning applied to document recognition},
+  journal = {Proceedings of the IEEE},
+  year = {1998},
+  volume = {86},
+  number = {11},
+  pages = {2278-2324},
+  doi = {10.1109/5.726791}
+}
+</pre>
+
+</td>
+
+</tr>
+
+<tr id="Krizhevsky2012" class="entry">
+
+<td>Krizhevsky A, Sutskever I and Hinton GE (2012), _"ImageNet Classification with Deep Convolutional Neural Networks"_, In Advances in Neural Information Processing Systems 25\. , pp. 1097-1105\. Curran Associates, Inc.. [[BibTeX](javascript:toggleInfo('Krizhevsky2012','bibtex'))] [[URL](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)]</td>
+
+</tr>
+
+<tr id="bib_Krizhevsky2012" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@incollection{Krizhevsky2012,
+  author = {Alex Krizhevsky and Sutskever, Ilya and Hinton, Geoffrey E},
+  editor = {F. Pereira and C. J. C. Burges and L. Bottou and K. Q. Weinberger},
+  title = {ImageNet Classification with Deep Convolutional Neural Networks},
+  booktitle = {Advances in Neural Information Processing Systems 25},
+  publisher = {Curran Associates, Inc.},
+  year = {2012},
+  pages = {1097--1105},
+  url = {http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf}
+}
+</pre>
+
+</td>
+
+</tr>
+
+<tr id="Silver2016" class="entry">
+
+<td>Silver D, Huang A, Maddison CJ, Guez A, Sifre L, van den Driessche G, Schrittwieser J, Antonoglou I, Panneershelvam V, Lanctot M, Dieleman S, Grewe D, Nham J, Kalchbrenner N, Sutskever I, Lillicrap T, Leach M, Kavukcuoglu K, Graepel T and Hassabis D (2016), _"Mastering the game of Go with deep neural networks and tree search"_, Nature., January, 2016\. Vol. 529, pp. 484\. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.. [[BibTeX](javascript:toggleInfo('Silver2016','bibtex'))] [[URL](http://dx.doi.org/10.1038/nature16961)]</td>
+
+</tr>
+
+<tr id="bib_Silver2016" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@article{Silver2016,
+  author = {Silver, David and Huang, Aja and Maddison, Chris J. and Guez, Arthur and Sifre, Laurent and van den Driessche, George and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and Dieleman, Sander and Grewe, Dominik and Nham, John and Kalchbrenner, Nal and Sutskever, Ilya and Lillicrap, Timothy and Leach, Madeleine and Kavukcuoglu, Koray and Graepel, Thore and Hassabis, Demis},
+  title = {Mastering the game of Go with deep neural networks and tree search},
+  journal = {Nature},
+  publisher = {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.},
+  year = {2016},
+  volume = {529},
+  pages = {484},
+  url = {http://dx.doi.org/10.1038/nature16961}
+}
+</pre>
+
+</td>
+
+</tr>
+
+<tr id="Gebru2017" class="entry">
+
+<td>Gebru T, Krause J, Wang Y, Chen D, Deng J, Aiden EL and Fei-Fei L (2017), _"Using deep learning and Google Street View to estimate the demographic makeup of neighborhoods across the United States"_, Proceedings of the National Academy of Sciences. National Academy of Sciences. [[Abstract](javascript:toggleInfo('Gebru2017','abstract'))] [[BibTeX](javascript:toggleInfo('Gebru2017','bibtex'))] [[DOI](https://doi.org/10.1073/pnas.1700035114)] [[URL](http://www.pnas.org/content/early/2017/11/27/1700035114)]</td>
+
+</tr>
+
+<tr id="abs_Gebru2017" class="abstract noshow">
+
+<td>**Abstract**: We show that socioeconomic attributes such as income, race, education, and voting patterns can be inferred from cars detected in Google Street View images using deep learning. Our model works by discovering associations between cars and people. For example, if the number of sedans in a city is higher than the number of pickup trucks, that city is likely to vote for a Democrat in the next presidential election (88% chance); if not, then the city is likely to vote for a Republican (82% chance).The United States spends more than $250 million each year on the American Community Survey (ACS), a labor-intensive door-to-door study that measures statistics relating to race, gender, education, occupation, unemployment, and other demographic factors. Although a comprehensive source of data, the lag between demographic changes and their appearance in the ACS can exceed several years. As digital imagery becomes ubiquitous and machine vision techniques improve, automated data analysis may become an increasingly practical supplement to the ACS. Here, we present a method that estimates socioeconomic characteristics of regions spanning 200 US cities by using 50 million images of street scenes gathered with Google Street View cars. Using deep learning-based computer vision techniques, we determined the make, model, and year of all motor vehicles encountered in particular neighborhoods. Data from this census of motor vehicles, which enumerated 22 million automobiles in total (8% of all automobiles in the United States), were used to accurately estimate income, race, education, and voting patterns at the zip code and precinct level. (The average US precinct contains ˜1,000 people.) The resulting associations are surprisingly simple and powerful. For instance, if the number of sedans encountered during a drive through a city is higher than the number of pickup trucks, the city is likely to vote for a Democrat during the next presidential election (88% chance); otherwise, it is likely to vote Republican (82\. Our results suggest that automated systems for monitoring demographics may effectively complement labor-intensive approaches, with the potential to measure demographics with fine spatial resolution, in close to real time.</td>
+
+</tr>
+
+<tr id="bib_Gebru2017" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@article{Gebru2017,
+  author = {Gebru, Timnit and Krause, Jonathan and Wang, Yilun and Chen, Duyun and Deng, Jia and Aiden, Erez Lieberman and Fei-Fei, Li},
+  title = {Using deep learning and Google Street View to estimate the demographic makeup of neighborhoods across the United States},
+  journal = {Proceedings of the National Academy of Sciences},
+  publisher = {National Academy of Sciences},
+  year = {2017},
+  url = {http://www.pnas.org/content/early/2017/11/27/1700035114},
+  doi = {10.1073/pnas.1700035114}
+}
+</pre>
+
+</td>
+
+</tr>
+
+<tr id="Zeiler2014" class="entry">
+
+<td>Zeiler MD and Fergus R (2014), _"Visualizing and Understanding Convolutional Networks"_, In Computer Vision -- ECCV 2014\. Cham , pp. 818-833\. Springer International Publishing. [[Abstract](javascript:toggleInfo('Zeiler2014','abstract'))] [[BibTeX](javascript:toggleInfo('Zeiler2014','bibtex'))]</td>
+
+</tr>
+
+<tr id="abs_Zeiler2014" class="abstract noshow">
+
+<td>**Abstract**: Large Convolutional Network models have recently demonstrated impressive classification performance on the ImageNet benchmark Krizhevsky et al. [18]. However there is no clear understanding of why they perform so well, or how they might be improved. In this paper we explore both issues. We introduce a novel visualization technique that gives insight into the function of intermediate feature layers and the operation of the classifier. Used in a diagnostic role, these visualizations allow us to find model architectures that outperform Krizhevsky et al on the ImageNet classification benchmark. We also perform an ablation study to discover the performance contribution from different model layers. We show our ImageNet model generalizes well to other datasets: when the softmax classifier is retrained, it convincingly beats the current state-of-the-art results on Caltech-101 and Caltech-256 datasets.</td>
+
+</tr>
+
+<tr id="bib_Zeiler2014" class="bibtex noshow">
+
+<td>**BibTeX**:
+
+<pre>@inproceedings{Zeiler2014,
+  author = {Zeiler, Matthew D. and Fergus, Rob},
+  editor = {Fleet, David and Pajdla, Tomas and Schiele, Bernt and Tuytelaars, Tinne},
+  title = {Visualizing and Understanding Convolutional Networks},
+  booktitle = {Computer Vision -- ECCV 2014},
+  publisher = {Springer International Publishing},
+  year = {2014},
+  pages = {818--833}
+}
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<footer><small>Created by [JabRef](http://jabref.sourceforge.net) on 30/08/2018.</small></footer>
