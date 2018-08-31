@@ -15,32 +15,3 @@ Literature
 ==========
 
 
-  1.article (Jean2016)
-
-      Jean, N., Burke, M., Xie, M., Davis, W. M., Lobell, D. B. and Ermon, S.
-
-      Combining satellite imagery and machine learning to predict poverty Science, American Association for the Advancement of Science, 2016, Vol. 353(6301), pp. 790-794
-
-  2.article (Ouyang2018)
-
-      Ouyang, W., Aristov, A., Lelek, M., Hao, X. and Zimmer, C.
-
-      Deep learning massively accelerates super-resolution localization microscopy Nature Biotechnology, Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved., 2018, Vol. 36, pp. 460
-
-  3.article (Zhou2018)
-
-      Zhou, Q., Tang, P., Liu, S., Pan, J., Yan, Q. and Zhang, S.-C. 
-
-      Learning atoms for materials discovery Proceedings of the National Academy of Sciences, National Academy of Sciences, 2018
-
-  4.article (Einav2018)
-
-      Einav, L., Finkelstein, A., Mullainathan, S. and Obermeyer, Z.
-
-      Predictive modeling of U.S. health care spending in late life Science, American Association for the Advancement of Science, 2018, Vol. 360(6396), pp. 1462-1465
-
-  5.article (Heft-Neal2018)
-
-      Heft-Neal, S., Burney, J., Bendavid, E. and Burke, M.
-
-      Robust relationship between air quality and infant mortality in Africa Nature, 2018, Vol. 559(7713), pp. 254-258
