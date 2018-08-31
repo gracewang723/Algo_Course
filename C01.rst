@@ -6,13 +6,13 @@ Material
 ________
 
 Homework
-========
+________
 
 Code
-====
+____
 
 Literature
-==========
+__________
 
   Jean N, Burke M, Xie M, Davis WM, Lobell DB and Ermon S (2016), **Combining satellite imagery and machine learning to predict poverty**, Science. Vol. 353(6301), pp. 790-794. American Association for the Advancement of Science.
 
