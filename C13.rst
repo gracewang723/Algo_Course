@@ -14,24 +14,24 @@ Code
 Literature
 ==========
 
-Fagnan DE, Fernandez JM, Lo AW and Stein RM (2013), **Can Financial Engineering Cure Cancer?**, The American Economic Review. Vol. 103(3), pp. 406-411. American Economic Association.
+  Fagnan DE, Fernandez JM, Lo AW and Stein RM (2013), **Can Financial Engineering Cure Cancer?**, The American Economic Review. Vol. 103(3), pp. 406-411. American Economic Association.
 
-Lazer D, Pentland A, Adamic L, Aral S, Barabási A-L, Brewer D, Christakis N, Contractor N, Fowler J, Gutmann M, Jebara T, King G, Macy M, Roy D and Van Alstyne M (2009), **Computational Social Science**, Science. Vol. 323(5915), pp. 721-723. American Association for the Advancement of Science.
+  Lazer D, Pentland A, Adamic L, Aral S, Barabási A-L, Brewer D, Christakis N, Contractor N, Fowler J, Gutmann M, Jebara T, King G, Macy M, Roy D and Van Alstyne M (2009), **Computational Social Science**, Science. Vol. 323(5915), pp. 721-723. American Association for the Advancement of Science.
 
-Hanaki N, Peterhansl A, Dodds PS and Watts DJ (2007), **Cooperation in Evolving Social Networks**, Management Science. Vol. 53(7), pp. 1036-1050.
+  Hanaki N, Peterhansl A, Dodds PS and Watts DJ (2007), **Cooperation in Evolving Social Networks**, Management Science. Vol. 53(7), pp. 1036-1050.
 
-Santos FC, Pacheco JM and Lenaerts T (2006), **Evolutionary dynamics of social dilemmas in structured heterogeneous populations**, Proceedings of the National Academy of Sciences. Vol. 103(9), pp. 3490-3494. National Academy of Sciences.
+  Santos FC, Pacheco JM and Lenaerts T (2006), **Evolutionary dynamics of social dilemmas in structured heterogeneous populations**, Proceedings of the National Academy of Sciences. Vol. 103(9), pp. 3490-3494. National Academy of Sciences.
 
-Gracia-Lázaro C, Ferrer A, Ruiz G, Tarancón A, Cuesta JA, Sánchez A and Moreno Y (2012), **Heterogeneous networks do not promote cooperation when humans play a Prisoner’s Dilemma**, Proc Natl Acad Sci USA., August, 2012. Vol. 109(32), pp. 12922.
+  Gracia-Lázaro C, Ferrer A, Ruiz G, Tarancón A, Cuesta JA, Sánchez A and Moreno Y (2012), **Heterogeneous networks do not promote cooperation when humans play a Prisoner’s Dilemma**, Proc Natl Acad Sci USA., August, 2012. Vol. 109(32), pp. 12922.
 
-Traulsen A, Semmann D, Sommerfeld RD, Krambeck H-J and Milinski M (2010), **Human strategy updating in evolutionary games**, Proceedings of the National Academy of Sciences. National Academy of Sciences.
+  Traulsen A, Semmann D, Sommerfeld RD, Krambeck H-J and Milinski M (2010), **Human strategy updating in evolutionary games**, Proceedings of the National Academy of Sciences. National Academy of Sciences.
 
-Shirado H and Christakis NA (2017), **Locally noisy autonomous agents improve global human coordination in network experiments**, Nature., May, 2017. Vol. 545, pp. 370. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
+  Shirado H and Christakis NA (2017), **Locally noisy autonomous agents improve global human coordination in network experiments**, Nature., May, 2017. Vol. 545, pp. 370. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
 
-Baum JAC, Cowan R and Jonard N (2010), **Network-Independent Partner Selection and the Evolution of Innovation Networks**, Management Science. Vol. 56(11), pp. 2094-2110.
+  Baum JAC, Cowan R and Jonard N (2010), **Network-Independent Partner Selection and the Evolution of Innovation Networks**, Management Science. Vol. 56(11), pp. 2094-2110.
 
-Hauert C and Doebeli M (2004), **Spatial structure often inhibits the evolution of cooperation in the snowdrift game**, Nature., April, 2004. Vol. 428, pp. 643. Macmillan Magazines Ltd..
+  Hauert C and Doebeli M (2004), **Spatial structure often inhibits the evolution of cooperation in the snowdrift game**, Nature., April, 2004. Vol. 428, pp. 643. Macmillan Magazines Ltd..
 
-Farmer JD and Foley D (2009), **The economy needs agent-based modelling**, Nature., 08, 2009. Vol. 460(7256), pp. 685-686. Nature Publishing Group.
+  Farmer JD and Foley D (2009), **The economy needs agent-based modelling**, Nature., 08, 2009. Vol. 460(7256), pp. 685-686. Nature Publishing Group.
 
-Gallo E and Yan C (2015), **The effects of reputational and social knowledge on cooperation**, Proceedings of the National Academy of Sciences. National Academy of Sciences.
+  Gallo E and Yan C (2015), **The effects of reputational and social knowledge on cooperation**, Proceedings of the National Academy of Sciences. National Academy of Sciences.
