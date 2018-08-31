@@ -14,32 +14,32 @@ Code
 Literature
 ==========
 
-Zou J and Schiebinger L (2018), **AI can be sexist and racist—it’s time to make it fair**.
+  Zou J and Schiebinger L (2018), **AI can be sexist and racist—it’s time to make it fair**.
 
-Wu Y-C, Shiledar A, Li Y-C, Wong J, Feng S, Chen X, Chen C, Jin K, Janamian S, Yang Z, Ballard ZS, Göröcs Z, Feizi A and Ozcan A (2017), **Air quality monitoring using mobile microscopy and machine learning**, Light: Science &Amp; Applications., September, 2017. Vol. 6, pp. e17046. The Author(s).
+  Wu Y-C, Shiledar A, Li Y-C, Wong J, Feng S, Chen X, Chen C, Jin K, Janamian S, Yang Z, Ballard ZS, Göröcs Z, Feizi A and Ozcan A (2017), **Air quality monitoring using mobile microscopy and machine learning**, Light: Science &Amp; Applications., September, 2017. Vol. 6, pp. e17046. The Author(s).
 
-Eisenstein M (2015), **Big data: The power of petabytes**, Nature., Nov, 2015. Vol. 527, pp. S2. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved..
+  Eisenstein M (2015), **Big data: The power of petabytes**, Nature., Nov, 2015. Vol. 527, pp. S2. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved..
 
-Savage N (2017), **Calculating disease**, Nature., Oct, 2017. Vol. 550, pp. S115. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved..
+  Savage N (2017), **Calculating disease**, Nature., Oct, 2017. Vol. 550, pp. S115. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved..
 
-Turing AM (1950), **Computing Machinery and Intelligence**, Mind. Vol. 59(236), pp. 433-460. [Oxford University Press, Mind Association].
+  Turing AM (1950), **Computing Machinery and Intelligence**, Mind. Vol. 59(236), pp. 433-460. [Oxford University Press, Mind Association].
 
-Turing AM (2009), **Computing Machinery and Intelligence**, In Parsing the Turing Test: Philosophical and Methodological Issues in the Quest for the Thinking Computer. Dordrecht , pp. 23-65. Springer Netherlands.
+  Turing AM (2009), **Computing Machinery and Intelligence**, In Parsing the Turing Test: Philosophical and Methodological Issues in the Quest for the Thinking Computer. Dordrecht , pp. 23-65. Springer Netherlands.
 
-Stocker M (2016), **Decision-making: Be wary of 'ethical' artificial intelligence**, Nature., Dec, 2016. Vol. 540, pp. 525. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved..
+  Stocker M (2016), **Decision-making: Be wary of 'ethical' artificial intelligence**, Nature., Dec, 2016. Vol. 540, pp. 525. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved..
 
-Esteva A, Kuprel B, Novoa RA, Ko J, Swetter SM, Blau HM and Thrun S (2017), **Dermatologist-level classification of skin cancer with deep neural networks**, Nature., Jan, 2017. Vol. 542, pp. 115. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
+  Esteva A, Kuprel B, Novoa RA, Ko J, Swetter SM, Blau HM and Thrun S (2017), **Dermatologist-level classification of skin cancer with deep neural networks**, Nature., Jan, 2017. Vol. 542, pp. 115. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
 
-Parkes DC and Wellman MP (2015), **Economic reasoning and artificial intelligence**, Science. Vol. 349(6245), pp. 267-272. American Association for the Advancement of Science.
+  Parkes DC and Wellman MP (2015), **Economic reasoning and artificial intelligence**, Science. Vol. 349(6245), pp. 267-272. American Association for the Advancement of Science.
 
-Mnih V, Kavukcuoglu K, Silver D, Rusu AA, Veness J, Bellemare MG, Graves A, Riedmiller M, Fidjeland AK, Ostrovski G, Petersen S, Beattie C, Sadik A, Antonoglou I, King H, Kumaran D, Wierstra D, Legg S and Hassabis D (2015), **Human-level control through deep reinforcement learning**, Nature., February, 2015. Vol. 518, pp. 529. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved..
+  Mnih V, Kavukcuoglu K, Silver D, Rusu AA, Veness J, Bellemare MG, Graves A, Riedmiller M, Fidjeland AK, Ostrovski G, Petersen S, Beattie C, Sadik A, Antonoglou I, King H, Kumaran D, Wierstra D, Legg S and Hassabis D (2015), **Human-level control through deep reinforcement learning**, Nature., February, 2015. Vol. 518, pp. 529. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved..
 
-Graves A, Wayne G, Reynolds M, Harley T, Danihelka I, Grabska-Barwińska A, Colmenarejo SG, Grefenstette E, Ramalho T, Agapiou J, Badia AP, Hermann KM, Zwols Y, Ostrovski G, Cain A, King H, Summerfield C, Blunsom P, Kavukcuoglu K and Hassabis D (2016), **Hybrid computing using a neural network with dynamic external memory**, Nature., October, 2016. Vol. 538, pp. 471. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
+  Graves A, Wayne G, Reynolds M, Harley T, Danihelka I, Grabska-Barwińska A, Colmenarejo SG, Grefenstette E, Ramalho T, Agapiou J, Badia AP, Hermann KM, Zwols Y, Ostrovski G, Cain A, King H, Summerfield C, Blunsom P, Kavukcuoglu K and Hassabis D (2016), **Hybrid computing using a neural network with dynamic external memory**, Nature., October, 2016. Vol. 538, pp. 471. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
 
-Silver D, Schrittwieser J, Simonyan K, Antonoglou I, Huang A, Guez A, Hubert T, Baker L, Lai M, Bolton A, Chen Y, Lillicrap T, Hui F, Sifre L, van den Driessche G, Graepel T and Hassabis D (2017), **Mastering the game of Go without human knowledge**, Nature., October, 2017. Vol. 550, pp. 354. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
+  Silver D, Schrittwieser J, Simonyan K, Antonoglou I, Huang A, Guez A, Hubert T, Baker L, Lai M, Bolton A, Chen Y, Lillicrap T, Hui F, Sifre L, van den Driessche G, Graepel T and Hassabis D (2017), **Mastering the game of Go without human knowledge**, Nature., October, 2017. Vol. 550, pp. 354. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
 
-Segler MHS, Preuss M and Waller MP (2018), **Planning chemical syntheses with deep neural networks and symbolic AI**, Nature., March, 2018. Vol. 555, pp. 604. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
+  Segler MHS, Preuss M and Waller MP (2018), **Planning chemical syntheses with deep neural networks and symbolic AI**, Nature., March, 2018. Vol. 555, pp. 604. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
 
-Hughes TW, Minkov M, Shi Y and Fan S (2018), **Training of photonic neural networks through in situ backpropagation and gradient measurement**, Optica., Jul, 2018. Vol. 5(7), pp. 864-871. OSA.
+  Hughes TW, Minkov M, Shi Y and Fan S (2018), **Training of photonic neural networks through in situ backpropagation and gradient measurement**, Optica., Jul, 2018. Vol. 5(7), pp. 864-871. OSA.
 
-Keane PA and Topol EJ (2018), **With an eye to AI and autonomous diagnosis**, npj Digital Medicine., August, 2018. Vol. 1(1), pp. 40.
+  Keane PA and Topol EJ (2018), **With an eye to AI and autonomous diagnosis**, npj Digital Medicine., August, 2018. Vol. 1(1), pp. 40.
