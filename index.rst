@@ -42,13 +42,13 @@ Course Team
 =========================
 Course Instructors
 __________________
-   Dr. Yong Tang
+   Dr. Yong Tang - School of Computer Science and Engineering, School of Economics and Management, UESTC
 
 Teaching Assistants
 ___________________
-   Wei-Jia Wang
+   Wei-Jia Wang - School of Information and Software, UESTC
    
-   Shi-Sheng Hu
+   Shi-Sheng Hu - School of ?, UESTC
    
 .. toctree::
 
