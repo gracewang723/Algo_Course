@@ -13,3 +13,43 @@ Code
 
 Literature
 ==========
+
+  Ohtsuki H, Hauert C, Lieberman E and Nowak MA (2006), **A simple rule for the evolution of cooperation on graphs and social networks**, Nature., May, 2006. Vol. 441, pp. 502. Nature Publishing Group.
+
+  da Fontoura Costa L, Jr. ONO, Travieso G, Rodrigues FA, Boas PRV, Antiqueira L, Viana MP and Rocha LEC (2011), **Analyzing and modeling real-world phenomena with complex networks: a survey of applications**, Advances in Physics. Vol. 60(3), pp. 329-412.
+
+  Watts DJ and Strogatz SH (1998), **Collective dynamics of `small-world'networks**, Nature., 06, 1998. Vol. 393, pp. 440 EP -. Macmillan Magazines Ltd. SN -.
+
+  Battiston S, Puliga M, Kaushik R, Tasca P and Caldarelli G (2012), **DebtRank: Too Central to Fail? Financial Networks, the FED and Systemic Risk**, Scientific Reports., 08, 2012. Vol. 2, pp. 541 EP -. The Author(s) SN -.
+
+  Fair KR, Bauch CT and Anand M (2017), **Dynamics of the Global Wheat Trade Network and Resilience to Shocks**, Scientific Reports., August, 2017. Vol. 7(1), pp. 7177.
+
+  Barabási A-L and Albert R (1999), **Emergence of scaling in random networks**, science. Vol. 286(5439), pp. 509-512. American Association for the Advancement of Science.
+
+  Strogatz SH (2001), **Exploring complex networks**, Nature., 03, 2001. Vol. 410(6825), pp. 268-276.
+  
+  Guimerà R and Nunes Amaral LA (2005), **Functional cartography of complex metabolic networks**, Nature., 02, 2005. Vol. 433, pp. 895 EP -. Macmillan Magazines Ltd. SN -.
+  
+  Wang C, Lo C, Liang H, Chien P, Chen H and Lo S (2013), **Inter-firm alliances networks in nanotechnology: The roles of network position and technological uncertainty**, In 2013 Proceedings of PICMET '13: Technology Management in the IT-Driven Services (PICMET)., July, 2013. , pp. 259-269.
+
+  Barabási A-L and Oltvai ZN (2004), **Network biology: understanding the cell's functional organization**, Nature Reviews Genetics., 02, 2004. Vol. 5, pp. 101 EP -. Nature Publishing Group SN -.
+
+  Barabási A-L, Gulbahce N and Loscalzo J (2010), **Network medicine: a network-based approach to human disease**, Nature Reviews Genetics., 12, 2010. Vol. 12, pp. 56 EP -. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved. SN -.
+
+  Adamic LA and Huberman BA (2000), **Power-Law Distribution of the World Wide Web**, Science. Vol. 287(5461), pp. 2115-2115. American Association for the Advancement of Science.
+
+  Stam C, Jones B, Nolte G, Breakspear M and Scheltens P (2007), **Small-World Networks and Functional Connectivity in Alzheimer's Disease**, Cerebral Cortex. Vol. 17(1), pp. 92-99.
+
+  Albert R and Barabási A-L (2002), **Statistical mechanics of complex networks**, Rev. Mod. Phys.., Jan, 2002. Vol. 74, pp. 47-97. American Physical Society.
+
+  Goh K-I, Cusick ME, Valle D, Childs B, Vidal M and Barabási A-L (2007), **The human disease network**, Proceedings of the National Academy of Sciences. Vol. 104(21), pp. 8685-8690. National Academy of Sciences.
+
+  Jeong H, Tombor B, Albert R, Oltvai ZN and Barabási AL (2000), **The large-scale organization of metabolic networks**, Nature., 10, 2000. Vol. 407, pp. 651 EP -. Macmillan Magazines Ltd. SN -.
+
+  Page L, Brin S, Motwani R and Winograd T (1999), **The PageRank Citation Ranking: Bringing Order to the Web.**. Thesis at: Stanford InfoLab., November, 1999. (1999-66) Stanford InfoLab.
+
+  Palla G, Derényi I, Farkas I and Vicsek T (2005), **Uncovering the overlapping community structure of complex networks in nature and society**, Nature., 06, 2005. Vol. 435, pp. 814 EP -. Macmillan Magazines Ltd. SN -.
+
+  Garlaschelli D, Caldarelli G and Pietronero L (2003), **Universal scaling relations in food webs**, Nature., May, 2003. Vol. 423, pp. 165. Macmillan Magazines Ltd..
+
+  Caner T, Sun J and Prescott JE (2014), **When a firm's centrality in R&D alliance network is (not) the answer for invention: The interaction of centrality, inward and outward knowledge transfer**, Journal of Engineering and Technology Management. Vol. 33, pp. 193 - 209.
