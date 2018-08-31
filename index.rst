@@ -38,7 +38,7 @@ Course Target
 
 * Expose to real, latest researches of techniques applied in these sciences
 
-* Lot’s of literature would be used and studied
+* Lots of literature would be used and studied
 
 * How to use techniques to solve the problems in these fields?
 
