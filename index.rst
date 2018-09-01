@@ -17,7 +17,7 @@ Course Mission
 
 * Social science: social network, social structure, policy making...
 
-* Economics: How to allocate scared/limited resources to optimize the output for the best of com/org/society/individuals?
+* Economics: How to allocate scarce/limited resources to optimize the output for the best of com/org/society/individuals?
 
 * Engineering: Manufacturing, food production, online business operation, Financial engineering...
 
@@ -51,7 +51,7 @@ Teaching Assistants
 =========================
 * Wei-Jia Wang - School of Information and Software, UESTC
    
-* Shi-Sheng Hu - School of ?, UESTC
+* Shi-Sheng Hu - School of Information and Communication, UESTC
 
 
 Content
