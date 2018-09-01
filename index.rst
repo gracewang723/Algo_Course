@@ -9,38 +9,45 @@ Course Introduction
 Course Mission  
 =========================
  
-* To build a bridge to connect: Computing Methods + Science/Engineering
+* To build a bridge to connect: 
 
-* Natural science: mathematics, physics, chemistry, cosmology...
+   * Computing Methods + Science/Engineering
 
-* Management science: planning, scheduling, optimization, supply chain, organization...
+* Science:
 
-* Social science: social network, social structure, policy making...
+   * Natural science: mathematics, physics, chemistry, cosmology...
 
-* Economics: How to allocate scarce/limited resources to optimize the output for the best of com/org/society/individuals?
+   * Management science: planning, scheduling, optimization, supply chain, organization...
 
-* Engineering: Manufacturing, food production, online business operation, Financial engineering...
+   * Social science: social network, social structure, policy making...
+
+   * Economics: How to allocate scarce/limited resources to optimize the output for the best of com/org/society/individuals?
+
+* Engineering: 
+
+   * Manufacturing, food production, online business operation
+   * Financial engineering...
 
 Course Target
 =========================
 
 * Expose to computing techniques:
 
-* Machine learning, AI (deep learning), network modelling methods, etc.
+   * Machine learning, AI (deep learning), network modelling methods, etc.
 
-* To know what we have in the toolbox.
+   * To know what we have in the toolbox.
 
 * Expose to the research frontiers of various sciences:
 
-* Natural science, Management science, Social science, etc.
+   * Natural science, Management science, Social science, etc.
 
-* To understand what’s going on in these fields.
+   * To understand what’s going on in these fields.
 
 * Expose to real, latest researches of techniques applied in these sciences
 
-* Lots of literature would be used and studied
+   * Lots of literature would be used and studied
 
-* How to use techniques to solve the problems in these fields?
+   * How to use techniques to solve the problems in these fields?
 
 
 Course Instructors
