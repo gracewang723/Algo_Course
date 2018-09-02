@@ -4,7 +4,7 @@ Course Introduction
 
 * Fall 2018
 
-* Core course for undergraduates in UESTC 
+* Core Course for Undergraduates in UESTC 
    
 Course Mission  
 =========================
@@ -15,31 +15,31 @@ Course Mission
 
 * Science:
 
-   * Natural science: mathematics, physics, chemistry, cosmology...
+   * Natural Science: Mathematics, Physics, Chemistry, Cosmology...
 
-   * Management science: planning, scheduling, optimization, supply chain, organization...
+   * Management Science: Planning, Scheduling, Optimization, Supply Chain, Organization...
 
-   * Social science: social network, social structure, policy making...
+   * Social Science: Social Network, Social Structure, Policy Making...
 
    * Economics: How to allocate scarce/limited resources to optimize the output for the best of com/org/society/individuals?
 
 * Engineering: 
 
-   * Manufacturing, food production, online business operation
-   * Financial engineering...
+   * Manufacturing, Food Production, Online Business Operation
+   * Financial Engineering...
 
 Course Target
 =========================
 
 * Expose to computing techniques:
 
-   * Machine learning, AI (deep learning), network modelling methods, etc.
+   * Machine Learning, AI (Deep Learning), Network Modelling Methods, etc.
 
    * To know what we have in the toolbox.
 
 * Expose to the research frontiers of various sciences:
 
-   * Natural science, Management science, Social science, etc.
+   * Natural Science, Management Science, Social Science, etc.
 
    * To understand what’s going on in these fields.
 
