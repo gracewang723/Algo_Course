@@ -4,15 +4,13 @@ C01 Introduction
  
 Material
 ========
-* Python Tutorial
+* Python Tutorial 
+ 
+ 
+ [Documentation](https://docs.python.org/3/tutorial/)
 
-  https://docs.python.org/3/tutorial/
-
-
-
-
-  https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU
-
+ [Video](https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
+  
 Homework
 ========
 
