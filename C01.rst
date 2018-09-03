@@ -6,10 +6,12 @@ Material
 ========
 * Python Tutorial 
  
- 
- [Documentation](https://docs.python.org/3/tutorial/)
+ `Documentation <https://docs.python.org/3/tutorial/>`__
 
- [Video](https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
+
+ `Video <https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`__
+
+
   
 Homework
 ========
