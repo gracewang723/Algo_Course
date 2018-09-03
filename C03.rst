@@ -5,7 +5,7 @@ C03 Network Science
 Material
 ========
 
-* Book
+* Introduction
   
   
   Boccaletti S, Latora V, Moreno Y, Chavez M and Hwang D-U (2006), **Complex networks: Structure and dynamics**, Physics Reports. Vol. 424(4), pp. 175 - 308.
