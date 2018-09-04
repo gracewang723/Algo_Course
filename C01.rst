@@ -15,7 +15,7 @@ Code
 
 Literature
 ==========
-`Video <https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`__
+
 
   Jean N, Burke M, Xie M, Davis WM, Lobell DB and Ermon S (2016), `Combining satellite imagery and machine learning to predict poverty <http://science.sciencemag.org/content/353/6301/790>`__ , Science. Vol. 353(6301), pp. 790-794. American Association for the Advancement of Science.
 
