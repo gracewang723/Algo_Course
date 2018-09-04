@@ -8,6 +8,8 @@ Material
 
  `Python Official Documentation <https://docs.python.org/3/tutorial/>`__
 
+ `MIT OpenCourseWare <https://www.youtube.com/watch?v=ytpJdnlu9ug&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA>`__
+
 
  `Python Tutorials-Corey Schafer <https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`__
 
