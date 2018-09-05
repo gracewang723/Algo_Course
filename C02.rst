@@ -13,7 +13,7 @@ Material
 
  `Python Tutorials-Corey Schafer <https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`__
 
- `《Python Cookbook》<http://shop.oreilly.com/product/0636920027072.do>`__
+ `《Python Cookbook》 <http://shop.oreilly.com/product/0636920027072.do>`__
 
 
 Homework
