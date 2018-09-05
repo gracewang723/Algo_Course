@@ -10,12 +10,13 @@ Material
 
  `MIT OpenCourseWare <https://www.youtube.com/watch?v=ytpJdnlu9ug&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA>`__
 
-
  `Python Tutorials-Corey Schafer <https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`__
  
  `Learn Python the Hard Way <https://learnpythonthehardway.org/>`__
 
  `《Python Cookbook》 <http://shop.oreilly.com/product/0636920027072.do>`__
+
+ `Scipy Tutorial <https://docs.scipy.org/doc/numpy/user/quickstart.html>`__
 
 
 Homework
