@@ -4,13 +4,8 @@ C03 Network Science
 
 Material
 ========
+`Networkx Tutorial <https://networkx.github.io/documentation/stable/index.html>`__
 
-* Introduction
-  
-  Boccaletti S, Latora V, Moreno Y, Chavez M and Hwang D-U (2006), `Complex networks: Structure and dynamics <https://www.sciencedirect.com/science/article/pii/S037015730500462X>`__, Physics Reports. Vol. 424(4), pp. 175 - 308.
-  
-  
-  
   
 
 Homework
