@@ -16,7 +16,7 @@ Material
 
  `《Python Cookbook》 <http://shop.oreilly.com/product/0636920027072.do>`__
 
- `Scipy Tutorial <https://docs.scipy.org/doc/numpy/user/quickstart.html>`__
+ `Numpy Tutorial <https://docs.scipy.org/doc/numpy/user/quickstart.html>`__
 
 
 Homework
