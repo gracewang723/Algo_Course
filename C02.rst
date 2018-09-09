@@ -18,7 +18,7 @@ Material
 
  `Numpy Tutorial <https://docs.scipy.org/doc/numpy/user/quickstart.html>`__
 
- `Python Crash Course by Eric Matthes <https://github.com/MrAlex6204/Books/blob/master/python-crash-course.pdf?tdsourcetag=s_pctim_aiomsg>`__
+
 
 
 Homework
