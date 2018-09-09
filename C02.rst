@@ -17,6 +17,7 @@ Material
  `《Python Cookbook》 <http://shop.oreilly.com/product/0636920027072.do>`__
 
  `Numpy Tutorial <https://docs.scipy.org/doc/numpy/user/quickstart.html>`__
+  `Python Crash Course <https://github.com/MrAlex6204/Books/blob/master/python-crash-course.pdf?tdsourcetag=s_pctim_aiomsg>`__
 
 
 Homework
