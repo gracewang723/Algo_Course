@@ -24,6 +24,14 @@ Material
 Homework
 ========
 
+1.Find all the prime numbers less than a non-negative integer N.
+2.Realize the bubble sort algorithm in python.
+3.Test the Goldbach’s conjecture using python to output all possible solutions for an even number N<10000, where both a and b are primes and a+b=N.
+4. Mars is far away from Earth. Supposing you are the programmer responsible for the communication  to control the robots on Mars from Earth, please consider the delay of communication between two planets and think how to design a program to control the robots walking on Mars.
+
+For Q1-3, please submit your py codes. For Q4, please write at most one page to describe your idea.
+
+
 Code
 ====
 
