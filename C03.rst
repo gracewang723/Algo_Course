@@ -6,8 +6,6 @@ Material
 ========
 `Networkx Tutorial <https://networkx.github.io/documentation/stable/index.html>`__
 
-  
-
 Homework
 ========
 1. Read one paper of the literature listed on our website of chapter3, and write one page discussion of the paper. You are encouraged to introduce the content in this paper and put up your consideration. Your page can include:
@@ -26,9 +24,9 @@ Homework
 
 3. Use netxworkx to generate one ER network, one small world network, and one scale free network; Calculate and plot the degree distributions for all three networks. (The total vertices N=1000.)
 
-For HW1-2, save them as two PDF documents. (English texts are preferred.)
+ For HW1-2, save them as two PDF documents. (English texts are preferred.)
 
-For HW3, save it as a py code.
+ For HW3, save it as a py code.
 
 Code
 ====
