@@ -7,6 +7,7 @@ Material
 
 Homework
 ========
+Design a research on social network analysis, write one page report discussing the data and possible research questions.
 
 Code
 ====
