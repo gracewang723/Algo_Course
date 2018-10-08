@@ -22,7 +22,7 @@ Literature
 
   Karpathy A and Fei-Fei L (2015), **Deep Visual-Semantic Alignments for Generating Image Descriptions**, In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)., June, 2015.
 
-  andMehran Pesteie andJorden Hetherington andPeter A. Behringer andTina Kapur andWilliam M. Wells andRobert Rohling andAndriy Fedorov andPurang Abolmaesumi AM (2017), **DeepInfer: open-source deep learning deployment toolkit for image-guided therapy**, Proc.SPIE. Vol. 10135, pp. 10135 - 10135 - 7.
+  Alireza Mehrtash, Mehran Pesteie, Jorden Hetherington, Peter A. Behringer, Tina Kapur, William M. Wells, Robert Rohling, Andriy Fedorov and Purang Abolmaesumi (2017), **DeepInfer: open-source deep learning deployment toolkit for image-guided therapy**, Proc.SPIE. Vol. 10135, pp. 10135 - 10135 - 7.
 
   Esteva A, Kuprel B, Novoa RA, Ko J, Swetter SM, Blau HM and Thrun S (2017), **Dermatologist-level classification of skin cancer with deep neural networks**, Nature., January, 2017. Vol. 542, pp. 115. Macmillan Publishers Limited, part of Springer Nature. All rights reserved..
 
