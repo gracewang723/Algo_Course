@@ -60,8 +60,6 @@ Teaching Assistants
 
 * Zi-Yang Jia - Department of Computer Science, Rutgers University
 
-* Shi-Sheng Hu - School of Information and Communication, UESTC
-
 
 Content
 =========================
