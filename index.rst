@@ -58,7 +58,7 @@ Teaching Assistants
 =========================
 * Wei-Jia Wang - School of Information and Software, UESTC
 
-* Zi-Yang Jia - Rutgers University
+* Zi-Yang Jia - Department of Computer Science, Rutgers University
 
 * Shi-Sheng Hu - School of Information and Communication, UESTC
 
