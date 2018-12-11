@@ -7,7 +7,12 @@ Material
 
 Homework
 ========
-Design a research on social network analysis, write one page report discussing the data and possible research questions.
+
+1.Design a research, write one page report discussing the data and possible research questions.
+
+2.Study one of the following literature and write one page comments.
+
+Choose either 1 or 2 as your homework.
 
 Code
 ====
