@@ -60,6 +60,7 @@ Teaching Assistants
 
 * Zi-Yang Jia - Department of Computer Science, Rutgers University
 
+* Qi-Da Li - School of Mathematical Science, UESTC
 
 Content
 =========================
