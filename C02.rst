@@ -35,8 +35,3 @@ Homework
 For Q1-3, please submit your py codes. For Q4, please write at most one page to describe your idea.
 
 
-Code
-====
-
-Literature
-==========
