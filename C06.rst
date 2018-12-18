@@ -2,17 +2,12 @@
 C06 AI Introduction
 **************************
 
-Material
-========
 
 Homework
 ========
 
 Design an AI application for healthcare, write one page discussing what/why/how/who
 
-
-Code
-====
 
 Literature
 ==========
