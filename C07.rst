@@ -2,9 +2,6 @@
 C07 Deep Learning Theory and Technology Foundation
 **************************************************
 
-Material
-========
-
 Homework
 ========
 
@@ -14,8 +11,6 @@ Homework
 
 Choose either 1 or 2 as your homework.
 
-Code
-====
 
 Literature
 ==========
