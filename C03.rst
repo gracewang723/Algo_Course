@@ -29,8 +29,6 @@ Homework
 
  For HW3, save it as a py code.
 
-Code
-====
 
 Literature
 ==========
